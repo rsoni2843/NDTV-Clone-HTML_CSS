@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cities.css">
+    <!-- <link rel="stylesheet" href="opinion.css"> -->
+    <script src="https://kit.fontawesome.com/ac807e8281.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;300;400&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="topnav">
+        <p><a style="font-size: 12px;border: 0px solid rgb(209, 201, 201);background-color:rgb(232, 230, 226);padding:3px;font-weight: bold ;" href="https://www.ndtv.com//#pfrom=ndtv-globalnav" alt="NDTV">NDTV</a></p>
+        <p><a href="https://ndtv.in//#pfrom=ndtv-globalnav" alt="हिन्दी">हिन्दी</a></p>  
+        <p><a  href="https://www.ndtv.com/business/#pfrom=ndtv-globalnav" alt="BUSINESS">BUSINESS</a></p>
+        <p><a  href="https://www.ndtv.com/entertainment/#pfrom=ndtv-globalnav" alt="MOVIES">MOVIES</a></p>
+        <p><a  href="https://sports.ndtv.com/cricket/#pfrom=ndtv-globalnav" alt="CRICKET">CRICKET</a></p>
+        <p><a  href="https://gadgets360.com//#pfrom=ndtv-globalnav" alt="TECH">TECH</a></p>
+        <p><a  href="https://food.ndtv.com//#pfrom=ndtv-globalnav" alt="FOOD">FOOD</a></p>
+        <p><a href="https://www.ndtv.com/business/cryptocurrency/#pfrom=ndtv-globalnav" alt="CRYPTO">CRYPTO <button style="color: white;background-color:red;border:none;font-size: 10px;">NEW</button></a></p>
+        <p><a  href="https://www.ndtv.com/webstories/#pfrom=ndtv-globalnav" alt="WEB STORIES">WEB STORIES</a></p>
+        <p><a  href="https://www.ndtv.com/education/#pfrom=ndtv-globalnav" alt="EDUCATION">EDUCATION</a></p>
+        <p><a  href="https://www.carandbike.com//#pfrom=ndtv-globalnav" alt="AUTO">AUTO</a></p>
+        <p><a  href="https://swachhindia.ndtv.com//#pfrom=ndtv-globalnav" alt="SWASTH">SWASTH</a></p>
+        <p><a  href="https://swirlster.ndtv.com//#pfrom=ndtv-globalnav" alt="LIFESTYLE">LIFESTYLE</a></p>
+        <p><a  href="https://doctor.ndtv.com//#pfrom=ndtv-globalnav" alt="HEALTH">HEALTH</a></p>
+        <p><a  href="https://www.ndtv.com/shopping/#pfrom=ndtv-globalnav" alt="SHOPPING">SHOPPING</a></p>
+        <p><a  href="https://www.mojarto.com//#pfrom=ndtv-globalnav" alt="ART">ART</a></p>
+    </nav>
+    <div id="navbar" >
+        
+        <a style="margin-left: 100px;"  class="ndtv-logo" href="https://www.ndtv.com/"><img width="38%" alt="NDTV News" title="News" class="ndtv-logo-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzY1IDY4LjkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM2NSA2OC45OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0VFMDAwMDt9PC9zdHlsZT48ZyBpZD0iWE1MSURfMV8iPjxwYXRoIGlkPSJYTUxJRF8zXyIgZD0iTTAsMC4xYzguNCwwLDE2LjgtMC4xLDI1LjIsMEMzNS4yLDAuNyw0NCw3LjQsNDguOCwxNmM0LjgsOS4xLDksMTguNSwxMy45LDI3LjVjMS42LDMuMiw0LjgsNS40LDguNCw1LjVDNzAuOSwzMi43LDcxLDE2LjQsNzEsMGM3LjQsMC4xLDE0LjcsMCwyMi4xLDBjMCw3LjEsMCwxNC4yLTAuMSwyMS40Yy01LjEsMi05LjQsNi41LTkuNSwxMi4yYy0wLjcsNi4yLDMuOSwxMS44LDkuNSwxMy43YzAuMSw3LjIsMCwxNC4zLDAuMSwyMS41Yy03LjMsMC4xLTE0LjcsMC0yMiwwLjFjLTguNSwwLjQtMTYuOS0zLjUtMjIuMy05LjljLTYtNy4zLTkuMS0xNi41LTEzLjYtMjQuNkMzMi4xLDI4LjYsMjkuOSwyMCwyMiwxOS43YzAsMTYuNC0wLjEsMzIuNywwLjEsNDkuMWMtNy40LDAuMS0xNC43LDAuMS0yMi4xLDBDMC4xLDQ1LjksMC4xLDIzLDAsMC4xeiIvPjxwYXRoIGlkPSJYTUxJRF82XyIgZD0iTTk5LjYsMC4xYzYyLjQsMCwxMjQuNy0wLjIsMTg3LjEsMC4xYzkuMywxNi45LDE4LjgsMzMuNywyOCw1MC42YzkuMi0xNi44LDE3LjctMzQsMjYuOC01MC44YzcuOCwwLjEsMTUuNi0wLjEsMjMuNSwwLjJjLTEuMywxLjktMi42LDMuOC0zLjcsNS44Yy0xMSwyMS0yMi4xLDQxLjktMzMuMiw2Mi44Yy04LjksMC0xNy45LDAtMjYuOCwwYy05LjctMTcuNS0xOS42LTM1LTI5LjItNTIuNWMtOS44LTAuMS0xOS43LDAtMjkuNSwwYzAsMTcuNSwwLjEsMzUsMCw1Mi41Yy03LjEsMC0xNC4xLDAtMjEuMiwwYzAtMTcuNSwwLjEtMzUsMC01Mi42Yy0xMC44LDAuMS0yMS43LDAtMzIuNSwwLjFjMiw3LjUsMS44LDE1LjMsMS41LDIzYy0wLjMsNy44LTIuNCwxNi4yLTguMiwyMS44Yy01LjYsNS44LTE0LDcuOC0yMS44LDcuN2MtMjAuMi0wLjEtNDAuNCwwLjEtNjAuNS0wLjFjMC4xLTcuMiwwLTE0LjMsMC4xLTIxLjRjNC44LTEuOSw4LjktNS44LDkuNC0xMS4yYzEtNi41LTMuNS0xMi42LTkuNC0xNC43Qzk5LjYsMTQuMyw5OS44LDcuMiw5OS42LDAuMSBNMTIxLjEsMTYuNWMwLjIsMTIsMC4xLDIzLjksMC4xLDM1LjljMTIuMSwwLjIsMjQuMiwwLjEsMzYuMiwwLjFjNC43LDAuMiwxMC4zLTIuNCwxMS03LjZjMC40LTYuNywwLjMtMTMuNCwwLjEtMjAuMWMtMC41LTUuNC02LjEtOC40LTExLjEtOC4zQzE0NS4zLDE2LjMsMTMzLjIsMTYuMiwxMjEuMSwxNi41eiIvPjxwYXRoIGlkPSJYTUxJRF83XyIgY2xhc3M9InN0MCIgZD0iTTgzLjUsMzMuNmMwLjEtNS43LDQuNC0xMC4zLDkuNS0xMi4yYzIuMi0wLjIsNC41LTAuMiw2LjcsMGM1LjksMi4yLDEwLjQsOC4yLDkuNCwxNC43Yy0wLjQsNS4zLTQuNiw5LjMtOS40LDExLjJjLTIuMiwwLjItNC41LDAuMi02LjcsMEM4Ny40LDQ1LjQsODIuOCwzOS45LDgzLjUsMzMuNnoiLz48L2c+PC9zdmc+"></a>
+    <div style="margin-right: 80px;" id="navbarcont">
+        <p><a title="LIVE TV" href="https://www.ndtv.com/video/live/channel/ndtv24x7">LIVE TV </a></p>
+        <p><a title="LATEST" href="https://www.ndtv.com/latest">LATEST </a></p>
+        <p><a title="COVID" href="https://www.ndtv.com/coronavirus">COVID </a></p>
+        <p><a title="INDIA" href="https://www.ndtv.com/india">INDIA </a></p>
+        <p><a title="OPINION" href="opinion.html">OPINION </a></p>
+        <p><a title="VIDEO" href="https://www.ndtv.com/video">VIDEO </a></p>
+        <p><a title="CITIES" href="cities.html">CITIES </a></p>
+        <p><a title="WORLD" href="https://www.ndtv.com/world-news">WORLD </a></p>
+        <p><a title="OFFBEAT" href="https://www.ndtv.com/offbeat">OFFBEAT </a></p>
+        <p><a title="TRENDS" href="https://www.ndtv.com/trends">TRENDS </a></p>
+        <p><a title="Photos" href="http://www.ndtv.com/photos">PHOTOS</a></p>
+        <p><a href=""><i class="fa-solid fa-ellipsis"></i></a></p>
+    </div>
+        <a style="color: black;" href="opinion.html"><i class="fa-solid fa-bell"></i></a>
+        <a style="color: black;" href="https://www.youtube.com/watch?v=WB-y7_ymPJ4"><i class="fa-solid fa-desktop"></i></a>     
+</div>
+
+<div id="container">
+    <div id="ad1" >
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=C7xRDMct0YsCCD4jyvQSIh5GYA-PGs_VppdLxs-UPlpOF8MoIEAEgzNPnHmDliumD4A6gAeuK8JoDyAECqQIwoJgFuyhMPuACAKgDAcgDCKoEngJP0AM3yK6K3L7odAAHlS_tSrRRHRA3vFARh0CUDjVNcjC-fQ-QO-2h0AfDSV_EsWFNPktyELPIaF2ld7PfwHdTulDXubBqDJ2hZIm6fB5W2hH-dXAQpV6cilO884uHl-H9oFqPTraWGtXc0B9SYPFpxVvwHS2VR8fS6Ie0EFv9WF0OCur5lhIgYTEupzq26urqc1BlgGHO9iM8UJFJnfV15Lx-FVIMqfd5fxBmwFSGXH3eAzmtjYzJHV-wQmipCc_srwWszafP9tmuipJO98ziTtA8WxGcTK9VGHSnVnmBkugzarbm3qN7-x7ie4m4IU9ZD04zrIjoGvCKApqeROcJsJfJfN5DxdTfFUWknFKpcoIoIChfn2CDgSH-5PhXwATpuJHQ8gPgBAGQBgGgBgKAB53ZqrMCiAcBkAcCqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB_PRG6gHltgbqAeqm7ECqAffn7EC2AcB0ggGCAAQAhgNsQlKNDN0i3dkEIAKA5gLAcgLAbgMAdgTAtAVAfgWAYAXAQ&ae=1&num=1&cid=CAMSeQClSFh3KByxgserJnewj9yhv3DHgeRCI9k8HmH6Oum16ibs4Q0u6VpJvqY-FsJ0XaBwLIJB3JmYPfOabPY6D8qF-9vGrF_DqRKdLq0d4I43K86QBz4PkqFcKJrzTnUzlt4UsOeuvsViwyAcV4AVCl-3mf8ZlN8_4eg&sig=AOD64_3uwnY_SaEr18yU6NBmimQ3973qvQ&client=ca-pub-8609501543919728&nx=CLICK_X&ny=CLICK_Y&nb=2&adurl=https://www.theleela.com/the-leela-palace-jaipur/special-offers/blissful-escapes/%3Fgclid%3DCjwKCAjwjtOTBhAvEiwASG4bCJMtaRA9hpacj90EMWBps_657YDuhTqrLnmuh-dyFJWhLrrKZDP10xoClycQAvD_BwE"><img  class="ad1" src="https://tpc.googlesyndication.com/daca_images/simgad/17533904992917620342" alt="add" ></a>
+        
+        <!-- <img class="adx" src="https://static.criteo.net/flash/icon/close_button.svg" alt=""> -->
+    </div>
+    <div id="HTO">
+        <span><a href="https://www.ndtv.com/">Home</a></span>
+        
+        <span>> <a href="cities.html">Cities</a></span>
+    </div>
+    <div id="container2">
+        <div id="content1">
+            <h1 style="font-family:'Roboto', sans-serif; ">Cities</h1>
+            <div>
+                <select ><option value="">Select Your Option Here</option><option value="agra-news">Agra News</option><option  value="ahmedabad-news">Ahmedabad News</option><option value="allahabad-news">Allahabad News</option><option value="amritsar-news">Amritsar News</option><option value="aurangabad-news">Aurangabad News</option><option value="bangalore-news">Bengaluru News</option><option value="bhopal-news">Bhopal News</option><option value="bhubaneshwar-news">Bhubaneshwar News</option><option value="chandigarh-news">Chandigarh News</option><option value="chennai-news">Chennai News</option><option value="delhi-news">Delhi News</option><option value="ghaziabad-news">Ghaziabad News</option><option value="goa-news">Goa News</option><option value="gurgaon-news">Gurgaon News</option><option value="guwahati-news">Guwahati News</option><option value="hyderabad-news">Hyderabad News</option><option value="jaipur-news">Jaipur News</option><option value="jammu-news">Jammu News</option><option value="kanpur-news">Kanpur News</option><option value="kolkata-news">Kolkata News</option><option value="lucknow-news">Lucknow News</option><option value="ludhiana-news">Ludhiana News</option><option value="meerut-news">Meerut News</option><option value="mumbai-news">Mumbai News</option><option value="muzaffarnagar-news">Muzaffarnagar News</option><option value="muzaffarpur-news">Muzaffarpur News</option><option value="nagpur-news">Nagpur News</option><option value="noida-news">Noida News</option><option value="others-news">Others</option><option value="patna-news">Patna News</option><option value="pune-news">Pune News</option><option value="srinagar-news">Srinagar News</option><option value="surat-news">Surat News</option><option value="thiruvananthapuram-news">Thiruvananthapuram News</option></select>       
+            </div>
+        </div>
+
+    </div>
+    <div id="articleandul">
+        <div class="uls">
+            <aside class="ulli" >
+                <h2 style="text-align: center;font-size: 22px;padding: 8px;background-color: rgb(217, 213, 213) ;color: rgb(0, 0, 0);">TRENDING</h2>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/ttmr4338_punjab-police-team-stopped-by-haryana-cops_240x180_06_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://www.ndtv.com/india-news/tajinder-pal-singh-bagga-arrest-latest-updates-punjab-police-arrest-delhi-bjp-leader-stopped-in-haryana-2951054#News_Trending">BJP Leader's Arrest: Punjab Cops Stopped In Haryana, Kidnap Case In Delhi</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/mdh2i1vg_khatija-_120x90_06_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://www.ndtv.com/entertainment/viral-inside-pics-from-ar-rahmans-daughter-khatijas-wedding-2950538#News_Trending">Viral: Inside Pics From AR Rahman's Daughter Khatija's Wedding</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/ug925gd8_tajinder-bagga-arrest-ndtv_120x90_06_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://www.ndtv.com/india-news/video-shows-tajinder-pal-singh-bagga-arrest-father-says-couldnt-even-wear-turban-2951117#News_Trending">Video Shows BJP Leader's Arrest, Father Says "Couldn't Even Wear Turban"</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/g93aklq8_amy-jackson_120x90_05_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://swirlster.ndtv.com/webstories/beauty/amy-jacksons-stylish-hairstyles-5708?utm_source=www.ndtv.com&utm_medium=web-page&utm_campaign=webstories">Amy Jackson's Best Hairstyles</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/4pdadlsk_marilynmonroethumb_120x90_03_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://movies.ndtv.com/webstories/entertainment/marilyn-monroe-s-glam-but-tragic-life-5675?utm_source=www.ndtv.com&utm_medium=web-page&utm_campaign=webstories">Marilyn Monroe's Glam But Tragic Life</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sideimg"><img src="https://c.ndtvimg.com/2022-05/qhe4arr_blakelivelythumb540_120x90_04_May_22.jpg" alt=""></div>
+                    <div class="sidearticle">
+                        <h3><a href="https://movies.ndtv.com/webstories/entertainment/met-gala-2022-blake-lively-matches-red-carpet-again-5689?utm_source=www.ndtv.com&utm_medium=web-page&utm_campaign=webstories">Blank Lively Matches Red Carpet Again</a></h3>
+                    </div>
+                </div>
+            </aside>
+            <aside class="ulli">
+                <h2 style="text-align: center;font-size: 22px;padding: 8px;background-color: rgb(217, 213, 213) ;color: rgb(0, 0, 0);"><img style="width: 6%;" src="https://assets.gadgets360cdn.com/kostprice/assets/banner/online-sale/202111/shopping-icon.svg"> SHOPPING</h2>
+                <div style="display: inline-block;">
+                    <a href="">
+                        <img src="https://assets.gadgets360cdn.com/pricee/assets/product/NDTV-saleislive-480_1651597183.jpg?downsize=100:*" alt="">
+                    <h4>Bag the Beat Deal in the Amazon</h4>
+                    <h5><button>Grab them now</button><img src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png" alt=""></h5>
+                    <p>+ 10% Instant Discount</p>
+                    </a>
+                </div>
+                <div style="display: inline-block;">
+                    <a href="https://pricee.com/api/redirect/n.php?itemid=deal-346017&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=7&property=www.ndtv.com&pos=2&utm_campaign=NDTV-Conv&pgtyp=listing-story">
+                        <img src="https://assets.gadgets360cdn.com/pricee/assets/product/NDTV-laptops1-480_1651596253.jpg?downsize=100:*" alt="">
+                    <h4>Lowest Price of the Season on Laptops</h4>
+                    <h5><button>Up to 30% off!</button> <img src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png" alt=""></h5>
+                    
+                    </a>
+                </div>
+                <div style="display: inline-block;">
+                    <a href="https://pricee.com/api/redirect/n.php?itemid=2-b07y58xq3z&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=3&property=www.ndtv.com&pos=3&utm_campaign=NDTV-Conv&pgtyp=listing-story">
+                        <img src="https://m.media-amazon.com/images/I/41PS3-%20W9jL._SL160_.jpg?downsize=100:*" alt="">
+                    <h4>AmazonBasics Hard Anodized Non-Stick 12-Piece Cookwar...</h4>
+                    <h5 style="font-size: 17px;">₹5,769 <img src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png" alt=""></h5>
+                    <p style="color: rgb(39, 145, 39);">(61% off)</p>
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+                            <!-- Articles Center -->
+
+        <div id="articles">
+            <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2022-05/t3n0jsa8_delhi-police-sketch-of-man-who-molested-girls-at-mcd-school-ani_120x90_06_May_22.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/opinion/indias-heatwaves-are-testing-the-limits-of-human-survival-2943822">Delhi Cops Arrest Man Who Entered School, Molested Girls Before Class</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/ruth-pollard-and-david-fickling-bloomberg">Ruth Pollard and David Fickling, Bloomberg</a> | Wednesday May 04, 2022</span>
+                    <p>The police has detained a 40-year-old man, accused of molesting two girls in a Municipal Corporation of Delhi or MCD-run school in Northeast Delhi, with the help of the sketch released on Thursday.</p>
+                </div>
+            </div>
+
+            <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2019-05/hbh1qqso_delhi-police-generic_120x90_27_May_19.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/delhi-news/delhi-school-sexual-assault-delhi-school-principal-teacher-suspended-after-sex-assault-complaint-2950666">Delhi School Principal, Teacher Suspended After Sex Assault Complaint</a></h3>
+                    <span><a href=""></a>Friday May 06, 2022, New Delhi</span>
+                    <p>The East Delhi civic body decided to suspend the principal and a teacher, and terminate the services of a contractual staff of a school in Bhajanpura where two girls were allegedly molested by a man a few days ago, mayor Shyam Sunder Aggarwal said.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2019-05/lqh0lqag_rajasthan-police-generic-twitter-240_120x90_28_May_19.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/india-news/jhalawar-rape-cop-arrested-suspended-from-duty-for-raping-tribal-woman-in-rajasthan-2950283">Cop Arrested, Suspended From Duty For Raping Tribal Woman In Rajasthan</a></h3>
+                    <span><a href="">Press Trust of Trust</a> | Friday May 06, 2022, Kota</span>
+                    <p>A police officer has been arrested and suspended from duty for allegedly raping a 25-year-old tribal woman in Rajasthan's Jhalawar district, police said on Thursday.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2019-05/hbh1qqso_delhi-police-generic_120x90_27_May_19.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/delhi-news/delhi-police-arrest-13-year-old-for-drowning-baby-in-water-tank-2950210">Delhi Police Arrest 13-Year-Old For Drowning Baby In Water Tank</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of India</a>| Wednesday May 04, 2022</span>
+                    <p>A 13-year-old boy was apprehended for allegedly killing an infant by drowning him in a water tank in east Delhi's Dallupura area, police said on Thursday.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://i.ndtvimg.com/i/2017-05/arrest-generic_240x180_41495967167.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/jaipur-news/jaipur-man-kills-teen-girl-her-brother-surrenders-2950154">Jaipur Man Kills Teen Girl, Her Brother, Surrenders</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press trust of India</a> | Thursday May 05, 2022, Jaipur</span>
+                    <p>A 26-year-old man in Jaipur surrendered before the police on Thursday after killing a minor girl and her brother allegedly after their relationship went sour, police said.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2021-03/ohh609j8_meat-shop-generic_120x90_19_March_21.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/delhi-news/several-illegal-meat-shops-sealed-in-north-delhi-says-civic-body-2950141">Several Illegal Meat Shops Sealed In North Delhi, Says Civic Body</a></h3>
+                    <span><a href="https://www.ndtv.com/delhi-news/several-illegal-meat-shops-sealed-in-north-delhi-says-civic-body-2950141">Press trust of India</a> | Thursday May 05,2022, New Delhi</span>
+                    <p>Health department teams at the BJP-led North Delhi Municipal Corporation on Thursday conducted a drive against illegal meat shops and sealed several such shops, officials said.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2020-04/522ul818_coronavirus-india-masks-generic-afp_120x90_04_April_20.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/topic/press-trust-of-india">Delhi Collected ₹ 22 Lakh As Mask Fine From Over 4,500 People In 12 Days</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of India</a> | Thursday May 05, 2022, New Delhi</span>
+                    <p>More than 4,500 people have been fined for ₹ 22 lakh in total in the city for not wearing masks since the mask mandate returned amid a spike in coronavirus cases, according to government data.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://i.ndtvimg.com/i/2016-04/arrest-generic-istock_240x180_51461678041.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/topic/press-trust-of-india">Child-less Noida Contractor Kidnaps Labourer's Son, Arrested In 3 Hours</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of India</a> | Thursday May 05, 2022, Noida</span>
+                    <p>A construction contractor in Greater Noida was arrested on Thursday for allegedly kidnapping a one-and-a-half-year-old son of a daily-wage labourer working for him and the child was rescued safely within three hours from his possession, police said.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2020-08/5vul55s_up-police-generic_120x90_16_August_20.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/topic/press-trust-of-india">UP Girl, 14, Allegedly Gang-raped, All Accused Arrested: Police</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of India</a> | Thursday May 05, 2022,Basti</span>
+                    <p>A minor was allegedly gang-raped by three youths when she went out to defecate and all the three accused were arrested within 24 hours, in Uttar Pradesh's Basti, police said on Thursday.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2020-01/uue5jm6o_hardeep-singh-puri_120x90_04_January_20.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/delhi-news/union-minister-hardeep-singh-puri-asks-arvind-kejriwal-to-rein-in-atishi-for-lying-about-bulldozing-temples-in-delhi-2949144">"Rein In Atishi" For Lying About Bulldozing Temples: Hardeep Puri Asks Arvind Kejriwal</a></h3>
+                    <span><a href="https://www.ndtv.com/delhi-news/union-minister-hardeep-singh-puri-asks-arvind-kejriwal-to-rein-in-atishi-for-lying-about-bulldozing-temples-in-delhi-2949144">Press Trust of India</a>| Thursday May 05, 2022, New Delhi</span>
+                    <p>Union minister Hardeep Singh Puri on Thursday launched a scathing attack on AAP MLA Atishi for spreading "lies" that the Centre and its agencies are on the verge of "bulldozing temples" in Delhi.</p>
+                </div>
+            </div>
+
+
+
+<div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2019-07/aq0tl9q_court-generic_120x90_27_July_19.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/surat-news/surat-man-who-killed-woman-for-rejecting-proposal-granted-death-penalty-2949137">Surat Man Who Killed Woman For Rejecting Proposal Granted Death Penalty</a></h3>
+                    <span><a href="https://www.ndtv.com/surat-news/surat-man-who-killed-woman-for-rejecting-proposal-granted-death-penalty-2949137"></a> | Thursday May 05, 2022, Surat</span>
+                    <p>A court in Surat on Thursday awarded death sentence to Fenil Goyani who murdered 21-year-old college student Grishma Vekariya outside her house for rejecting his relationship proposal in February this year.</p>
+                </div>
+            </div>
+            <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2020-03/v3sui128_mumbai-local-trains-_120x90_23_March_20.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/mumbai-news/railways-revise-fare-for-ac-local-trains-and-first-class-travel-in-mumbai-2948736"> Railways Revise Fare For AC Local Trains And First-Class Travel In Mumbai</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of India</a> | Thursday May 05, 2022, Mumbai</span>
+                    <p>The Railways on Thursday implemented the revised single-journey ticket fares for passengers travelling in first-class compartments and air-conditioned suburban local trains here, an official said.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2022-04/qf6k0an4_manish-sisodia-aap_120x90_11_April_22.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/delhi-news/manish-sisodia-delhi-civic-bodies-planning-to-demolish-over-2-600-unauthorised-colonies-2948002">"BJP Planning To Demolish 1,750 Unauthorised Colonies": Manish Sisodia</a></h3>
+                    <span><a href="https://www.ndtv.com/delhi-news/manish-sisodia-delhi-civic-bodies-planning-to-demolish-over-2-600-unauthorised-colonies-2948002">Press Trust of India</a> | Thursday May 05, 2022, New Delh</span>
+                    <p>Delhi Deputy Chief Minister Manish Sisodia on Thursday alleged that the BJP, which is ruling the three civic bodies here, was planning to raze constructions in 1,750 unauthorised irregular and 860 slum colonies.</p>
+                </div>
+            </div>
+
+
+
+ <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/2022-05/vmqm11ms_loudspeaker-row_120x90_04_May_22.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/topic/asian-news-international"> Raj Thackeray's Party Workers Arrested For "Creating Tension": Police</a></h3>
+                    <span><a href="https://www.ndtv.com/topic/asian-news-international">Asian News International</a> | Thursday May 05, 2022, Nashik</span>
+                    <p>A total of 150 Maharashtra Navnirman Sena Party workers were arrested in Nashik district of Maharashtra for creating "communal tension" in the district, informed local police officials.</p>
+                </div>
+            </div>
+
+
+
+
+        <div class="artins">
+                <div class="articlepic">
+                    <img src="https://c.ndtvimg.com/newborn-generic_120x90_1527921728741.jpg" alt="">
+                </div>
+                <div class="articlematter">
+                    <h3><a href="https://www.ndtv.com/topic/press-trust-of-india">Rats Bite Newborn Baby's Knee, Limbs At Government Hospital In Jharkhand </a></h3>
+                    <span><a href="https://www.ndtv.com/topic/press-trust-of-india">Press trust of India</a> | Thursday May 05, 2022, Dhanbad</span>
+                    <p>In a shocking case of neglect rats have allegedly nibbled the knees and limbs of a new born in a Jharkhand government hospital in Giridih, following which the services of two outsourced workers were terminated, officials said on Wednesday.</p>
+                </div>
+            </div>
+
+                                     <!-- 1 2 3 4 Bar -->
+
+            <div id="pagenation">
+                <span>1</span>
+                <a href="https://www.ndtv.com/cities/page-2" title="Page 2">2</a>
+                <a href="https://www.ndtv.com/cities/page-3" title="Page 3">3</a>
+                <a href="https://www.ndtv.com/cities/page-4" title="Page 4">4</a>
+                <a href="https://www.ndtv.com/cities/page-5" title="Page 5">5</a>
+                <a href="https://www.ndtv.com/cities/page-6" title="Page 6">6</a>
+                <a href="https://www.ndtv.com/cities/page-7" title="Page 7">7</a>
+                <a href="https://www.ndtv.com/cities/page-8" title="Page 8">8</a>
+                <a href="https://www.ndtv.com/cities/page-9" title="Page 9">9</a>
+                <a href="https://www.ndtv.com/cities/page-10" title="Page 10">10</a>
+                ...
+                <a href="https://www.ndtv.com/cities/page-14" title="Page 14">14</a>
+                <a id="nextpagebtn" href="https://www.ndtv.com/cities/page-2"><i class="fa-solid fa-angle-right"></i></a>
+            </div> 
+
+            <div >
+                <p style="padding: 10px;margin-bottom: -9px;">advertisement</p>
+                <img style="width: 50%;height: 280px;padding: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb-SWr2MX9m6L-B0FTFbCVpgSsdQ9J9ilaiw&usqp=CAU" alt="">
+                <p style="width: 50%; padding: 10px;font-weight: bolder;">35 साल से अधिक आयु के लिये - 1 करोड़ का जीवन बीमा मात्र ₹490/माह*.</p>
+                
+            </div>
+                <!-- <a href="https://www.ndtv.com/opinion/page-2" title="Page 2"></a> -->
+                <h5>......................Advertisement......................</h5>
+                <div id="last">
+                    <p>About Us</p>
+                    <p>Advertise</p>
+                    <p>Archives</p>
+                    <p>Apps</p>
+                    <p>Career</p>
+                    <p>Channels</p>
+                    <p>Disclaimer</p>
+                    <p>Feedback</p>
+                    <p>Investors</p>
+                    <p>Rudressals</p>
+                    <p>Service Terms</p>
+                </div>
+                <div id="lastline">
+                    <p>This website follows the dnpa code of ethics</p>
+                    <p>copyright ndtv convergence limited 2022. all rights reserved</p>
+                </div>
+        </div>
+
+        <div id="adds">
+            <div>
+                <p style="margin-bottom: -3px;">advertisement</p>
+                <a href="https://www.apple.com/in/shop/buy-watch"><img style="width: 100%;" src="https://tpc.googlesyndication.com/simgad/18142035209921144682" alt=""></a>
+                <a href="https://www.metroshoes.net/brands/occasion/mochi.html"><img style="margin-top: 20px;width: 100%;" src="https://tpc.googlesyndication.com/simgad/12390144445208665083?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4ql_KpOIbaSYh43B0xBsibRakwlrZQ" alt=""></a>
+                <div>
+                    <img style="width: 100%;margin-top: 100px;" src="https://c.ndtvimg.com/2022-05/gpvalhho_csk-eid-instagram_625x300_03_May_22.jpg?output-quality=80&downsize=1278:*" alt="MSD">
+                    <p style="font-weight: bold;">Watch: MS Dhoni and Co. Celebrate Eid in Chennai Super Kings Camp</p>
+                </div>
+                <div>
+                    <img style="width: 100%;margin-top: 30px;" src="https://drop.ndtv.com/video/images/vod/gif/2022-05/natashapoonawalla_92620.gif" alt="">
+                    <p style="font-weight: bold;">Met Gala 2022: Natasha Poonawalla's Red Carpet Glory</p>
+                </div>
+                <div style="margin-top: 60px;">
+                    <img style="width: 48%;" src="https://drop.ndtv.com/albums/ENTERTAINMENT/salman-deepika-_637872551280025641/637872551297387678.jpeg" alt="">
+                    <img style="width: 48%;" src="https://drop.ndtv.com/albums/ENTERTAINMENT/salman-deepika-_637872551280025641/637872551301770631.jpeg" alt="">
+                    <p style="font-weight: bold;">Salman, Deepika, Ranveer And Other Stars Lit Up This Eid Party</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="https://c.ndtvimg.com/2022-04/7d0guq4_navneet-rana_625x300_24_April_22.jpg" alt="">
+                    <p style="font-weight: bold">Civic Body Reaches Maharashtra MP-MLA Couple's Home Over "Illegal Construction"</p>
+                </div>
+                <div>
+                    <p style="text-align: center;margin-top: 50px;margin-bottom: -3px;">advertisement</p>
+                    <img style="width: 100%;" src="https://tpc.googlesyndication.com/simgad/18008759901847736" alt="">
+                </div>
+                <div style="margin-top: 60px;">
+                    <img style="width: 100%;" src="https://solis-mulund.com/images/slider/slide-1.jpg" alt="">
+                    <p style="font-weight: bold;">2,2.5 & 3 BHK start ₹1.49 Cr at Wadhwa Solis,Mulund (West)</p>
+                </div>
+                <div style="margin-top: 30px;">
+                    <img style="width: 100%;" src="https://c.ndtvimg.com/2022-05/d09kpddo_kareena-kapoor_625x300_03_May_22.jpg" alt="">
+                    <p style="font-weight: bold;">"Eid Mubarak from the family that is always trying to take the perfect picture ...but never has!!!," wrote Kareena Kapoor</p>
+                </div>
+               
+                <div style="margin-top: 30px;">
+                    <img style="width: 100%;" src="https://c.ndtvimg.com/2022-04/o3alre3o_watermelon_625x300_25_April_22.jpg" alt="">
+                    <p style="font-weight: bold;">"Eid Mubarak from the family that is always trying to take the perfect picture ...but never has!!!," wrote Kareena Kapoor</p>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+                       
+      
+
+
+    
+
+
+
+
+
+</div>
+
+<!-- <i style="color: white;" class="fa-solid fa-bell"></i> -->
+</body>
+</html>

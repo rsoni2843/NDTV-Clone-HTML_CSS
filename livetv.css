@@ -1,0 +1,281 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    
+    
+}
+#navbar{
+    width: 99%;
+    height: 100px;
+   
+    background-color: white;
+    padding: 10px 10px 120px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#upperheading{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height:40% ;
+    
+    justify-content: space-around;
+    color: black;
+    background-color: white;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+#lowerheading{
+    width: 92%;
+    height: 56%;
+    
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+   
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+#ndtvimage{
+    width: 100%;
+    
+}
+#ndtvimage1{
+    width: 200px;
+    height: 120px;
+    margin-left: -80%;
+}
+
+button{
+    display: flex;
+    width: 120px;
+    float: right;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0px 20px 0px 10px;
+    margin-top: -20px;
+   
+
+    
+}
+.btnimg{
+    width: 100%;
+}
+.btnbox{
+    width: 25px ;
+    margin-left: -7px;
+    display: flex;
+    
+    justify-content: space-between;
+    
+
+}
+#btn1{
+    background-color: rgb(0, 174, 255);
+    color: white;
+
+}
+a{
+  
+    text-decoration: none;
+    color: white;
+
+}
+#btn2{
+    background-color: rgb(0, 68, 255);
+    color: white;
+
+}
+p{
+   font-size: 12px;
+   margin-top: -3px;
+   margin-left: 5px;
+} 
+input{
+margin-left: 85%;
+
+height: 20px;
+}
+select{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 0px 10px 0px;
+    color: rgb(24, 23, 23);
+    font-weight: lighter;
+    
+}
+#livetv{
+    width: 80%;
+    height: 600px;
+    
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#livenav{
+    width: 100%;
+    height: 12%;
+  
+    display: flex;
+   justify-content: space-between;
+
+}
+#left{
+    width: 10%;
+    height: 100%;
+    background-color: red;
+}
+
+h1{
+    color: white;
+   text-align: center;
+}
+#right{
+    display: flex;
+    width: 30%;
+    margin-left: 60%;
+    
+
+}
+#right>div{
+   
+    width: 33%;
+    height: 100%;
+}
+#secimg{
+    width: 100%;
+}
+#livebox{
+    display: flex;
+    width: 100%;
+    height: 85%;
+  
+   
+}
+#liveleft{
+    width: 70%;
+    height: 100%;
+   
+}
+#llnav{
+    width: 100%;
+    height: 12%;
+    
+    display: flex;
+    background-color: rgb(58, 58, 58);
+   color: white;
+}
+#llnav>div{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bottomlive{
+    width: 100%;
+    height: 90%;
+    
+    display: flex;
+    background-color: rgb(58, 58, 58);
+}
+#blleft{
+    width: 10%;
+    height: 95%;
+   
+    background-color: rgb(58, 58, 58);
+}
+#mainlive{
+    width: 90%;
+    height: 95%;
+ 
+}
+#blleft>div{
+    width: 50%;
+    height: 8%;
+    
+    margin-left: 15px;
+    background-color: rgb(122, 121, 121);;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+#blleft>div:hover{
+    background-color: orangered;
+
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+#rightoptions{
+    display: grid;
+    grid-template-columns: 250px 100px;
+    grid-template-rows: repeat(7,120px);
+    width: 30%;
+    scroll-behavior:auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(58, 58, 58);
+}
+
+
+.iframe1{
+    width: 100%;
+    height: 100%;
+}
+h4{
+    padding: 5px 20px 5px 20px;
+    color: rgb(194, 194, 194);
+    background-color: rgb(58, 58, 58);
+}
+#allnews{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,220px);
+    width: 60%;
+    margin-left: 170px;
+    margin-top: 120px;
+    row-gap: 50px;
+}
+
+
+.h4{
+    background-color: white;
+    color: black;
+    padding: 5px 20px 5px 20px;
+    line-height: 20px;
+    margin-top: -5px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: blue;
+}
+.iframe2{
+    width: 80%;
+    height: 60%;
+    margin-left: 20px;
+}
+#sectionhead>h1{
+    color: black;
+    margin-left: -60%;
+    margin-top: 50px;
+    padding-top: 70px;
+}
+.add2{
+    width: 100%;
+    height: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin-top: 40px;
+}

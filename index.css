@@ -1,0 +1,919 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(223, 222, 222);
+    
+    
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+    
+    background-color: #3e3e3e;
+    
+    
+   
+    
+}
+#upperheading{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height:40% ;
+   
+    justify-content: space-around;
+    color: white;
+    background-color:#3e3e3e;
+    align-items: center;
+    font-size: 11px;
+    cursor: pointer;
+}
+#upperheading>div{
+    padding: 5px 5px 5px 5px;
+}
+#upperheading>div:hover{
+    
+    background-color: black;
+    border-radius: 5px;
+}
+
+#lowerheading{
+    width: 93%;
+    height: 56%;
+    
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background-color:#3e3e3e;
+    color: white;
+    cursor: pointer;
+   
+}
+
+#lowerheading>div:hover{
+    text-decoration:underline ;
+    
+}
+.logodiv{
+    width: 30px;
+    margin-left: -25px;
+    margin-top: -15px;
+    color: #3e3e3e;;
+
+}
+.logodiv:hover{
+    color: white;
+    font-weight: bolder;
+    
+    
+}
+
+.logoimg{
+    font-size: 15px;
+    
+    
+
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+#ndtvimage{
+     width: 9% ;
+     height: 50%;
+     margin-top: 13px;
+    
+     /* background-color:#3e3e3e ; */
+}
+.margintop{
+   margin-top: 20px;
+}
+#main{
+    width: 95%;
+    height: auto;
+    
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+ 
+    
+
+  
+}
+
+#left{
+    display: grid;
+    grid-template-columns: 120px 200px;
+    grid-template-rows: repeat(10,100px);
+    width: 25%;
+    row-gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    
+  
+
+}
+#mainleft{
+    background-color: white;
+}
+
+   
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+font-weight: bold;
+
+}
+p{
+    padding: 0px 10px 0px 10px;
+}
+img{
+    border-radius: 5px;
+}
+#center{
+    width: 40%;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+#right{
+    width:25% ;
+}
+#up{
+    display: flex;
+    justify-content: space-around;
+   
+  
+    width: 100%;
+    height: 200px;
+}
+#up>div{
+    width: 45%;
+    height: 90%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 5px;
+
+    padding: 0px;
+    
+    
+}
+#poli{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+.upimg{
+    width: 90%;
+    height: 80%;
+    margin-left: 10px;
+}
+
+.imgp{
+    font-size: 11px;
+    padding: 5px 5px 5px 5px;
+    margin-top: -5px;
+}
+#external{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#external1{
+    display: grid;
+    grid-template-columns: 200px 150px;
+    grid-template-rows: repeat(3,100px);
+    width: 65%;
+    
+    
+}
+#external1>div{
+   
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#external2{
+    width: 40%;
+    height: auto;
+  
+     background-image: url(https://img.etimg.com/thumb/msid-63826997,width-640,resizemode-4,imgsize-276383/modi-at-10-downing-street.jpg);
+     background-repeat: no-repeat;
+     
+     background-size: cover;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     box-shadow:inset 5px 5px 50px 20px;
+   
+    
+     
+}
+.externalimg{
+    height: 80%;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+p{
+    font-weight: bold;
+}
+h4{
+    color: white;
+    margin-top: 180px;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+   
+    
+    
+    
+}
+#bolly{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+
+#marry{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    
+    margin-top: 50px;
+    justify-content: space-between;
+    
+
+   
+}
+#marry1{
+    width: 40%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url(https://english.cdn.zeenews.com/sites/default/files/2022/05/02/1038178-7.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #000;
+    box-shadow:inset 5px 5px 50px 20px;
+    
+
+
+
+}
+.marryh4{
+     font-size: 20px;
+     margin-left: 10px;
+}
+#marry2{
+    display: grid;
+    grid-template-columns: 200px 120px;
+    grid-template-rows: repeat(3,100px);
+}
+
+
+#marry2>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    
+}
+#bigstory{
+    width: 25%;
+    
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding-top: 50px;
+    background-color: white;
+}
+.bigstoryimg{
+    width: 100%;
+    height: 70%;
+    
+}
+h2{
+    margin-top: -40px;
+    margin-left: 10px;
+}
+.navimg{
+    width: 100%;
+    height: 50%;
+   
+}
+.navimg:hover{
+    margin-top: -5px;
+}
+.navimg1{
+    width: 100%;
+    height: 60%;
+}
+.navimg1:hover{
+    margin-top: -5px;
+}
+#navimg2{
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    border-radius: 80px;
+}
+#navimg2:hover{
+    margin-top: -5px;
+}
+.imgtop{
+    margin-top: 10px;
+}
+.searchbox{
+    
+    margin-top: 5px;
+    
+   
+    
+}
+.searchbox2{
+    
+    margin-top: 5px;
+    
+   
+    
+}
+
+#searchtext{
+    
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 0;
+    transition: all 0.4s;
+    color: white;
+    
+    
+}
+#searchtext2{
+    
+    font-size: 14px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 0;
+    transition: all 0.4s;
+    color: white;
+    
+    
+}
+
+
+.fa-magnifying-glass{
+   color:black;
+   height: 35px;
+   width: 35px;
+   line-height: 35px;
+   background-color: white;;
+  
+   border-radius: 50px;
+   text-align: center;
+
+}
+#ii{
+    color:black;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: white;;
+   
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+ 
+ }
+.searchbox:hover #searchtext{
+    width: 180px;
+}
+.searchbox2:hover #searchtext2{
+    width: 110px;
+}
+.searchbox:hover .fa-magnifying-glass{
+    background-color: black;
+    color: white;
+    
+}
+.searchbox2:hover #ii{
+    background-color: black;
+    color: white;
+    
+}
+
+#bolly1{
+   
+    background-image: url(https://myindiafirst.com/wp-content/uploads/2022/05/uuhkpat8_aditi-hydari-audi_625x300_04_May_22.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment:local;
+     box-shadow:inset 5px 5px 50px 20px;
+     
+}
+#bolly2{
+    background-image: url(https://c.ndtvimg.com/2022-05/j2d2nhfo_ira-khan_625x300_04_May_22.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 5px 5px 50px 20px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    box-shadow:inset 5px 5px 50px 20px;
+    
+}
+.awhite{
+  color: white;  
+}
+#iplsection{
+    width: 95%;
+    height: 500px;
+   
+    margin: auto;
+    margin-top: 120px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#iplnav{
+   width: 100%;
+   height: 15%;
+  
+}
+#head{
+    display: flex;
+    
+   
+}
+.head1{
+   color: green;
+   text-decoration: underline;
+   margin-top: 20px;
+}
+#iplmain{
+    width: 90%;
+    height: 88%;
+   
+    display: flex;
+}
+#topnews{
+  width: 40%;
+  height: 100%;
+  
+}
+#sportsimg{
+    width: 95%;
+    height: 75%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#sportstext{
+    color: black;
+    margin: 0;
+}
+#sidenews{
+    display: grid;
+    grid-template-columns: 170px 300px;
+    grid-template-rows: repeat(3,100px);
+    row-gap: 5px;
+    
+    margin: auto;
+    margin-bottom: 110px;
+    margin-left: 60px;
+    
+    
+
+}
+ button{
+    
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+
+} 
+#bottombar{
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: 50px;
+    display: flex;
+    background-color: rgb(221, 218, 218);
+}
+#bbleft{
+    width: 20%;
+    height: 100%;
+    
+   
+}
+#bbimgbox{
+    width: 50%;
+    height: 20%;
+   
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#bbimg{
+    width: 90%;
+    height: 100%;
+
+}
+#bbimgbox1{
+     
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+#bbimgbox2{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    margin-left: 20px;
+
+}
+#bbimgbox2>div{
+    width: 17%;
+    height: 100%;
+    margin-left: 10px;
+
+}
+#bbimg2{
+    width: 85%;
+}
+#bbinput{
+    margin-top: 40px;
+    margin-left: 60px;
+    height: 10%;
+}
+#bbinput2{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    border: 0;
+    outline: 0;
+    
+
+
+}
+#bbi{
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 195px;
+    border: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 10px;
+}
+#bbright{
+  width: 80%;
+  height: 100%;
+ 
+ 
+}
+#bbrtop{
+    width: 100%;
+    height: 35%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    
+
+
+}
+#bbrtop>div{
+    width: 9%;
+    height: 40%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+hr{
+    
+    width: 80%;
+    height: 1px;
+    background-color: rgb(43, 42, 42);
+}
+#bbcen{
+     width: 100%;
+     height: 30%;
+    
+     display: flex;
+
+}
+#bbbtn{
+    border-radius: 2px;
+}
+#bbbtnbox{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#btnright{
+    display: flex;
+}
+#btnright>div{
+    width: 10%;
+    height: 10%;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+#btnbot{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.hr1{
+    width: 1px;
+    height: 90%;
+}
+#top{
+    display: flex;
+    width: 100%;
+}
+#topright{
+    width: 70%;
+    height: 300px;
+   
+    margin-top: 90px;
+    margin-left: 10px;
+}
+#cancle{
+    width: 96%;
+    height: 10%;
+   
+    margin: auto;
+    
+    
+    
+}
+.cancle{
+    border-radius: 0;
+    background-color: rgb(238, 237, 237);
+
+    color: teal;
+    float: right;
+}
+.cancle:hover{
+     background-color: red;
+     color: white;
+}
+.add{
+    position: relative;
+    height: 90%;
+}
+#iplhr{
+    margin-left: -5px;
+    margin-top: -5px;
+}
+.add2{
+    width: 100%;
+    height: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin-top: 40px;
+}
+.add3{
+    width: 90%;
+    height: 20%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#arrow{
+    display: flex;
+    width: 15%;
+    height:15%;
+    background-color:white;
+    color: blue;
+        
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    bottom: 50px;
+
+}
+.add2nav{
+    width: 100%;
+    height: 10%;
+    
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    
+    
+}
+#add2koo{
+    display: grid;
+    grid-template-columns: 100px 255px;
+    grid-template-rows: repeat(6,100px);
+    height: 300px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    
+   
+    background-color: white;
+}
+
+#koo{
+    width:15%;
+    height: 17%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: -20px;
+}
+.kootext{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: -30px;
+}
+
+.hrkoo{
+    width: 300px;
+    height: 1px;
+    background-color: white;
+    margin-left: -80px;
+}
+.cancle2{
+    border-radius: 0;
+    background-color: rgb(238, 237, 237);
+
+    color: teal;
+    float: right;
+}
+.cancle2:hover{
+     background-color: red;
+     color: white;
+}
+   
+#shopping{
+    width: 100%;
+    height: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 45px;
+    
+    background-color: white;
+    
+
+}
+#slogo{
+    display: grid;
+    grid-template-columns: 50px 100px;
+    grid-template-rows: 50px;
+
+    
+}
+#slogo>div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.add2nav2{
+    width: 100%;
+    height: 5%;
+    
+    display: flex;
+    margin-top: 10px;
+}
+   
+.add2nav2>div{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+#red{
+    text-decoration: underline red 5px;
+}
+#mainshopping{
+    display: grid;
+    grid-template-columns: 100px 255px;
+    grid-template-rows: repeat(4,130px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+    row-gap: 20px;
+
+}
+
+.stext{
+    font-size: 18px;
+    padding: 10px 20px 5px 30px;
+    font-weight: bolder;
+    color: rgb(24, 23, 23);
+}
+.simage{
+    display: flex;
+}
+.smainimg{
+    margin-left: 30px;
+}
+.sprice{
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: grey;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 1px;
+
+}
+#sinput{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#smaininput{
+    width: 50%;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 3px solid orange;
+}
+.sp{
+    font-size: 10px;
+    color: black;
+    
+}
+#sright{
+    
+    width: 100%;
+}
+.add2nav3{
+    width: 100%;
+    height: 10%;
+    
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex; 
+}
+#campain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 500px;
+    width: 95%;
+    margin: auto;
+    gap: 50px;
+    margin-top: 70px;
+    
+}
+#campain>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+.campainimg{
+    width: 100%;
+    height: 60%;
+}
+.campaintext{
+   margin-top: 40px;
+}
+
+.campainp{
+  
+    font-weight: lighter;
+    margin-left: 5px;
+}
+.nava{
+    color: white;
+    font-size: 10px;
+}
+.nava2{
+    color: white;
+}

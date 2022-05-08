@@ -294,3 +294,37 @@ h4{
 #upperheading>div:hover{
     background-color: lightgray;
 }
+#campain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 500px;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+    margin-top: 70px;
+    
+}
+#campain>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+.campainimg{
+    width: 100%;
+    height: 60%;
+}
+.campaintext{
+   margin-top: 40px;
+}
+
+.campainp{
+  
+    font-weight: lighter;
+    margin-left: 5px;
+}
+.nava{
+    color: white;
+    font-size: 10px;
+}
+.nava2{
+    color: white;
+}

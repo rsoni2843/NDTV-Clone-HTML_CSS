@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latest</title>
+</head>
+
+
+<style>
+    body {
+        width: 90%;
+        margin: 20px;
+        margin-left: 100px;
+
+    }
+
+    .topAds {
+
+        /* border: 2px solid black; */
+        height: 220px;
+        width: 1000px;
+        margin: auto;
+    }
+
+    .minNav {
+        display: flex;
+        color: blue;
+        gap: 7px;
+
+    }
+
+    .headN {
+        font-weight: bolder;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        /* width: 85%; */
+        /* border: 2px solid black; */
+    }
+
+    .trendings {
+        /* border: 1px solid red; */
+        width: 300px;
+    }
+
+    .trHead {
+        margin: auto;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    .trBox {
+        display: flex;
+        /* width: 200px; */
+        /* padding: 10px;
+        margin: 10px;
+        border: 10px; */
+        gap: 14px;
+        margin-bottom: 22px;
+        /* border: 2px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+
+    .trimg {
+        width: 55px;
+        height: 45px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .trbimg {
+        width: 55px;
+        height: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .trtext {
+        margin-top: -6px;
+        width: 80%;
+        cursor: pointer;
+
+
+        /* transition: all 200ms linear 0ms; */
+    }
+
+    .trbeautytop {
+        display: flex;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        cursor: pointer;
+    }
+
+    .slides {
+        margin-top: -11px;
+        font-weight: 100;
+        color: grey;
+        cursor: pointer;
+    }
+
+    .sbox {
+        color: black;
+        /* border: 2px solid red; */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        width: 100%;
+        margin-top: 11px;
+        margin-bottom: 8px;
+
+    }
+
+    .imgstop {
+        align-items: center;
+        text-align: center;
+        background-color: green;
+        margin-left: 45px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .lsdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+
+
+    }
+
+    .sbtn {
+        background-color: white;
+        border-radius: 4px;
+        font-weight: bold;
+        padding: 0px;
+        border: 1px solid grey;
+        font-size: 10px;
+        width: 100%;
+        height: 20px;
+        margin-left: 10px;
+
+
+
+    }
+
+    .simg2 {
+        width: 80%;
+    }
+
+    .sp {
+        /* color: grey; */
+        padding: 2px;
+        margin: 2px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+    /* -------------------------------------------Mid Content */
+
+    .mnews {
+        /* display: flex; */
+        /* border: 4px solid rgb(23, 156, 23); */
+        width: 720px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .mbox {
+        display: flex;
+        /* border: 2px solid rgb(55, 174, 114); */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-bottom: 15px;
+        padding: 2px;
+    }
+
+    .mimg {
+        width: 120px;
+        height: 100px;
+        margin-top: 20px;
+        margin-right: 15px;
+        border-radius: 5px;
+    }
+
+    .mc {
+        display: flex;
+        margin-top: -25px;
+        margin-bottom: -25px;
+        gap: 5px;
+    }
+
+    .mndtv {
+        color: blue;
+        cursor: pointer;
+    }
+
+    .mcontent {
+        width: 500px;
+    }
+
+    .adtext {
+        color: rgb(128, 128, 128);
+        text-align: center;
+        margin-bottom: -1px;
+        font-weight: 100;
+    }
+
+    .lbtn {
+        color: black;
+        text-decoration: none;
+
+        margin: auto;
+        /* background-color: grey; */
+
+        padding: 2px;
+        width: 70%;
+        margin-left: 20px;
+        /* padding: 5px; */
+
+
+    }
+
+    .mnbtnone {
+
+        background-color: rgb(88, 85, 85);
+        color: white;
+        border-radius: 50px;
+        border: none;
+        padding: 4.4px;
+    }
+
+    .mnbt {
+        /* background-color: grey; */
+        background-color: white;
+        border-radius: 50px;
+        border: none;
+        text-decoration: none;
+        /* padding: 10px; */
+
+
+    }
+
+
+
+    .mnbtnine {
+
+        background-color: white;
+        color: grey;
+        border: 0.5px solid grey;
+        border-radius: 50px;
+        /* border: none; */
+        font-weight: bolder;
+        /* padding: 7.5px; */
+        font-size: 18px;
+
+    }
+
+    /* parent button div  */
+    .mbtnnav {
+        /* border: 2px solid purple; */
+        margin: auto;
+        text-align: center;
+        /* background-color: red; */
+        display: flex;
+        margin-left: 100px;
+        gap: 15px;
+        color: black;
+
+
+
+    }
+
+
+    .nbtn {
+        color: black;
+
+    }
+
+    .ninec {
+        color: grey
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------------- */
+    .rightNews {
+        /* border: 1px solid blue; */
+        width: 400px;
+        margin-top: -100px;
+
+    }
+
+    .ad1 {
+        margin: auto;
+        width: 345px;
+        height: 550px;
+
+    }
+
+    .ad2 {
+        margin: auto;
+        width: 345px;
+        /* height: 550px; */
+
+
+    }
+
+    .grey {
+        color: grey;
+        font-weight: lighter;
+    }
+
+    .adotheri {
+        margin: auto;
+        width: 320px;
+    }
+
+    .adother {
+        width: 345px;
+
+    }
+
+    .adothert {
+        width: 270px;
+
+        margin-top: -2px;
+    }
+
+    .gs {
+        font-size: small;
+        margin-top: -15px;
+        font-weight: bold;
+    }
+
+    .homi {
+        color: blue
+    }
+
+    .firstNav {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid red; */
+        font-size: 12px;
+        margin-left: 60px;
+        cursor: pointer;
+
+    }
+
+
+
+    .nfirst {
+        margin: 10px;
+        color: grey;
+        margin-top: -15px;
+
+    }
+
+    .navbar {
+        width: 100%;
+
+        background-color: rgb(251, 250, 250);
+    }
+
+    .secondNav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        box-shadow: 0 2px 16px rgb(0 0 0 / 0%);
+        /* border: 1px solid red; */
+        font-size: 13px;
+        cursor: pointer;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        /* width: 120%; */
+        font-weight: lighter;
+        gap: 20px;
+        background-color: white;
+        top: 0;
+        bottom: 20;
+        position: sticky;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+
+    }
+
+    .l1 {
+        /* border: 2px solid red; */
+        width: 150px;
+        height: 60px;
+        margin-top: 10px;
+        background: none;
+
+    }
+
+    .logo {
+        margin: auto;
+        width: 65%;
+
+    }
+
+    .nSeconddot {
+        /* font-weight: bolder; */
+        width: 20px;
+        margin-top: 9px;
+
+
+    }
+
+    .sym {
+        /* border: 2px solid green; */
+        margin-left: 300px;
+        display: flex;
+        filter: contrast(50);
+    }
+
+    .sy1 {
+
+        border: 2px solid red;
+        border-color: white;
+        margin-right: 10px;
+        font-weight: bolder;
+        width: 20px;
+
+    }
+
+    .sy2 {
+
+        border: 2px solid red;
+        border-color: white;
+        margin-right: 10px;
+        font-weight: bolder;
+        width: 20px;
+
+    }
+
+    .sy3 {
+
+        border: 2px solid red;
+        border-color: white;
+        margin-right: 10px;
+        font-weight: bolder;
+        width: 20px;
+
+    }
+
+    .shopping {
+        display: flex;
+        gap: 8px;
+        background-color: rgba(227, 222, 222, 0.363);
+        align-items: center;
+        text-align: center;
+        height: 40px;
+    }
+
+    .imgshop {
+        height: 22px;
+        margin-left: 25px;
+    }
+
+    a:visited {
+        color: blue;
+    }
+
+    .nSecond>a {
+        color: black;
+        font-weight: lighter;
+    }
+
+    .nfirst>a {
+        color: black;
+        font-weight: lighter;
+    }
+
+
+    .koodiv {
+        /* border: 2px solid red; */
+        background-color: white;
+        display: inline-block;
+        margin-top: 30px;
+        width: 250px;
+        height: 510px;
+        top: 0;
+        bottom: 20;
+
+        overflow-y: scroll;
+        /* overflow-x: hidden; */
+        /* scrollbar-width: 1px; */
+        box-sizing: border-box;
+    }
+
+    .koohead {
+        background-color: rgb(241, 238, 238);
+        position: absolute;
+        width: 235px;
+    }
+
+    .kooimg {
+        width: 50px;
+        height: 50px;
+        /* border: 2px solid grey; */
+        border-radius: 50px;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-top: -15px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    }
+
+    .kooleftimg {
+        width: 50px;
+        height: 50px;
+        margin-top: -8px;
+
+
+    }
+
+    .koocontent {
+        margin-top: 10px;
+    }
+
+    .koorightimg {
+        width: 15px;
+        height: 15px;
+        margin-top: -2px;
+        margin-left: 5px;
+
+    }
+
+    .kootopic {
+        margin-top: -1.9px;
+        margin-left: 10px;
+    }
+
+    .khrs {
+        margin-left: -120px;
+        color: grey;
+
+    }
+
+    .khrs1 {
+        margin-left: -80px;
+        color: grey;
+
+    }
+
+    .trend {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .koobox {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        margin-bottom: 30px;
+
+    }
+
+    .footer {
+        width: 670px;
+        margin-top: 50px;
+        /* border: 2px solid red; */
+    }
+
+    .footmid {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 11.5px;
+        justify-content: space-between;
+    }
+
+    .footbox {
+        margin-right: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 1.95px 2.6px;
+
+
+    }
+
+    .footbox>a {
+        color: black;
+    }
+
+    .cright {
+        color: grey;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .xtrnewsDiv {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 100%; */
+        /* border: 2px solid blue; */
+        margin-top: 22px;
+        margin-left: -270px;
+        /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+
+    }
+
+    .xtraMainBox {
+        /* border: 2px solid red; */
+        margin-bottom: 30px;
+
+        margin: 10px;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+    }
+
+    .xbox {
+        width: 310px;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+
+    .ximg {
+        width: 300px;
+        border-radius: 6px;
+        margin-left: 4.55px;
+        margin-top: 5px;
+        height: 210px;
+        /* margin: auto; */
+    }
+
+    .xtextad {
+        /* background-color: red; */
+        font-size: 14;
+    }
+
+    .xnads {
+        margin-top: 0px;
+        font-weight: 100;
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .sndmain {
+        display: flex;
+        margin-left: -260px;
+        margin-top: 80px;
+
+    }
+
+    .longdivL {
+        width: 645px;
+    }
+
+    .limg {
+        width: 555px;
+        height: 355px;
+        margin-top: 22px;
+    }
+
+    .ltextad {
+        font-size: 29px;
+
+    }
+
+    .lnads {
+        font-size: 18px;
+        margin-top: -20px;
+        color: grey;
+    }
+
+    .thirddiv {
+        /* border: 2px solid red; */
+        width: 1100px;
+        display: flex;
+    }
+
+    .timg {
+        width: 470px;
+        /* gap: 10px; */
+        height: 330px;
+        margin-top: 22px;
+        border-radius: 10px;
+    }
+
+
+    .ttextad {
+        font-size: 19px;
+
+    }
+
+    .tnads {
+        font-size: 18px;
+        margin-top: -5px;
+        color: grey;
+    }
+</style>
+
+<body>
+
+    <!-- <div class="navbar"> -->
+
+    <div class="firstNav">
+        <p class="nfirst"><a href="index.html">NDTV</a></p>
+        <p class="nfirst"><a href="https://ndtv.in//#pfrom=ndtv-globalnav">हिन्दी</a></p>
+        <p class="nfirst"><a href="https://www.ndtv.com/business/#pfrom=ndtv-globalnav">BUSINESS</a></p>
+        <p class="nfirst"><a href="https://www.ndtv.com/entertainment/#pfrom=ndtv-globalnav">MOVIES</a></p>
+        <p class="nfirst"><a href="https://sports.ndtv.com/cricket/#pfrom=ndtv-globalnav">CRICKET</a></p>
+        <p class="nfirst"><a href="https://gadgets360.com//#pfrom=ndtv-globalnav">TECH</a></p>
+        <p class="nfirst"><a href="https://food.ndtv.com//#pfrom=ndtv-globalnav">FOOD</a></p>
+        <p class="nfirst"><a href="https://www.ndtv.com/business/cryptocurrency/#pfrom=ndtv-globalnav">CRYPTO</a></p>
+        <p class="nfirst"><a href="https://www.ndtv.com/webstories/#pfrom=ndtv-globalnav">WEB STORIES</a></p>
+        <p class="nfirst"><a href="https://www.ndtv.com/education/#pfrom=ndtv-globalnav">EDUCATION</a></p>
+        <p class="nfirst"><a href="https://www.carandbike.com//#pfrom=ndtv-globalnav">AUTO</a></p>
+        <p class="nfirst"><a href="https://swachhindia.ndtv.com//#pfrom=ndtv-globalnav">SWASTH</a></p>
+        <p class="nfirst"><a href="https://swirlster.ndtv.com//#pfrom=ndtv-globalnav">LIFESTYLE</a></p>
+        <p class="nfirst"><a href="https://doctor.ndtv.com//#pfrom=ndtv-globalnav">HEALTH</a></p>
+        <p class="nfirst"><a href="shopping.html">SHOPPING</a></p>
+        <p class="nfirst"><a href="https://www.mojarto.com//#pfrom=ndtv-globalnav">ART</a></p>
+
+    </div>
+
+
+
+    <div class="secondNav">
+        <div class="l1">
+            <a href="index.html"><img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/NDTV_logo.svg/470px-NDTV_logo.svg.png?20100223181259"
+                    alt=""></a>
+        </div>
+
+        <p class="nSecond"><a href="livetv.html"> LIVE TV</p></a>
+        <p class="nSecond"><a href="latest.html">LATEST</a></p>
+        <p class="nSecond"><a href="">COVID</a></p>
+        <p class="nSecond"><a href="">INDIA</a></p>
+        <p class="nSecond"><a href="opinion.html">OPINION</a></p>
+        <p class="nSecond"><a href="videos.html">VIDEO</a></p>
+        <p class="nSecond"><a href="cities.html">CITIES</a></p>
+        <p class="nSecond"><a href="https://www.ndtv.com/world-news">WORLD</a></p>
+        <p class="nSecond"><a href="https://www.ndtv.com/offbeat">OFFBEAT</a></p>
+        <p class="nSecond"><a href="https://www.ndtv.com/trends">TRENDS</a></p>
+        <p class="nSecond"><a href="photos.html">PHOTOS</a></p>
+        <p class="nSeconddot"><img src="/ellipsis-solid.svg" alt=""></p>
+
+
+
+        <div class="sym">
+            <img class="sy1" src="/display-solid.svg.svg" alt="">
+            <img class="sy2" src="/bell-regular.svg.svg" alt="">
+            <img class="sy3" src="/magnifying-glass-solid.svg.svg" alt="">
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- </div> -->
+
+
+
+
+
+    <div class="topAds">
+        <img class="topAds" src="https://gos3.ibcdn.com/img-1613303670.jpg" alt="">
+    </div>
+
+
+    <div class="minNav">
+        <p><a class="homi" href="https://www.ndtv.com/"> Home</a></p>
+        <p>></p>
+        <p>Latest News</p>
+
+    </div>
+
+    <h1 class="headN">Latest News</h1>
+
+
+    <div id="container">
+
+
+
+        <div class="trendings">
+
+            <h3 class="trHead">TRENDING</h3>
+
+            <div class="trBox">
+                <div>
+                    <img class="trimg" src="https://c.ndtvimg.com/2022-05/5sndohmo_salman-khan_120x90_04_May_22.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <h3 class="trtext">
+                        <i><a style="color: black"
+                                href="https://www.ndtv.com/entertainment/guys-salman-sir-mujhe-chhorne-aae-hai-said-shehnaaz-gill-as-she-held-salman-khans-hand-after-eid-party-2944034">
+                                "Salman Sir Mujhe Chhorne Aae Hai",</i>
+                        Said Shehnaz As She Held Salman's Hand</a>
+                    </h3>
+                </div>
+
+            </div>
+            <div class="trBox">
+                <div>
+                    <img class="trimg" src="https://c.ndtvimg.com/2022-05/nfhs3g7g_ira-khan_120x90_03_May_22.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <h3 class="trtext">
+                        <a style="color: black;"
+                            href="https://www.ndtv.com/entertainment/aamir-khans-daughter-ira-khan-enjoys-date-with-boyfriend-nupur-shikhare-shares-cute-pics-2946686">
+                            Aamir's Daughter Ira Shares Eid Celebration Pics. Don't Miss out Imran Khan</a>
+
+                    </h3>
+                </div>
+
+            </div>
+            <div class="trBox">
+                <div>
+                    <img class="trimg"
+                        src="https://img.etimg.com/thumb/msid-91326306,width-300,imgsize-53630,,resizemode-4,quality-100/raj-thackeray.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <h3 class="trtext">
+                        <a style="color: black;"
+                            href="https://www.ndtv.com/india-news/loudspeaker-row-live-updates-raj-thackerays-deadline-ends-mumbai-on-alert-2944118">
+                            Raj Thackeray's "Deadline" Ends, Mumbai On Alert Amid Loudspeaker Row</a>
+                    </h3>
+                </div>
+
+
+            </div>
+
+
+            <div class="trBox">
+                <div>
+                    <img class="trbimg"
+                        src="https://c.ndtvimg.com/2022-04/ga681fe_samanthaskincare1_120x90_28_April_22.jpg" alt="">
+                </div>
+                <div>
+                    <div class="trbeautytop">
+                        <img class="trlogo" src="" alt="">
+                        <h3 style="font-weight:100 ; margin-bottom: 19px;">
+                            |&#9724;| Beauty
+                        </h3>
+
+                    </div>
+                    <h3 class="trtext">
+                        <a style="color: black;"
+                            href="https://swirlster.ndtv.com/webstories/beauty/happy-birthday-samantha-ruth-prabhu-samantha-ruth-prabhus-beauty-secrets-5637">
+                            Samantha Ruth Prabhu's Skincare Secrets</a>
+                    </h3>
+                    <h5 class="slides"> <a href=""></a>
+                        14 Slides
+                    </h5>
+                </div>
+
+            </div>
+
+            <div class="trBox">
+                <div>
+                    <img class="trbimg"
+                        src="https://c.ndtvimg.com/2022-04/20vfs93o_deepikasabyasarees1_120x90_27_April_22.jpg" alt="">
+                </div>
+                <div>
+                    <div class="trbeautytop">
+                        <img class="trlogo" src="" alt="">
+                        <h3 style="font-weight:100 ; margin-bottom: 19px;">
+                            |&#9724;| Celeb
+                        </h3>
+
+                    </div>
+                    <h3 class="trtext">
+                        <a style="color: black;"
+                            href="https://swirlster.ndtv.com/style/deepika-padukones-dazzling-saree-style-for-the-time100-impact-awards-2022-too-has-left-an-incredibly-chic-impact-on-us-2849636">
+                            Deepika Padukone's Sabyasachi Sarees</a>
+                    </h3>
+                    <h5 class="slides"> <a href=""></a>
+                        12 Slides
+                    </h5>
+                </div>
+
+            </div>
+            <div class="trBox">
+                <div>
+                    <img class="trbimg"
+                        src="https://c.ndtvimg.com/2022-04/lbv9vq5g_ranveerjayeshthumb_120x90_26_April_22.jpg" alt="">
+                </div>
+                <div>
+                    <div class="trbeautytop">
+                        <img class="trlogo" src="" alt="">
+                        <h3 style="font-weight:100 ; margin-bottom: 19px;">
+                            |&#9724;| Entertainment
+                        </h3>
+
+                    </div>
+                    <h3 class="trtext">
+                        <a style="color: black;"
+                            href="https://www.ndtv.com/entertainment/alia-bhatt-and-ranveer-singh-to-be-first-guests-on-koffee-with-karan-7-report-2948627">
+                            Ranveer Singh Can't Stop, Won't Stop</a>
+                    </h3>
+                    <h5 class="slides"> <a href=""></a>
+                        11 Slides
+                    </h5>
+                </div>
+
+            </div>
+
+            <div class="shopping">
+                <div><img class="imgshop"
+                        src="https://assets.gadgets360cdn.com/kostprice/assets/banner/online-sale/202111/shopping-icon.svg"
+                        alt=""></div>
+                <h3>SHOPPING</h3>
+
+            </div>
+
+            <div class="sbox">
+                <div>
+                    <img class="imgstop"
+                        src="https://assets.gadgets360cdn.com/pricee/assets/product/NDTV-saleislive-480_1651597183.jpg?downsize=100:*"
+                        alt="">
+                    <div style="font-weight: 900;font-size: 15px;">Bag The Best Deals in Amazone Summer Sale</div>
+
+                    <div class="lsdiv">
+
+                        <div> <button class="sbtn"><a
+                                    href="https://pricee.com/api/redirect/n.php?itemid=deal-346057&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=7&property=www.ndtv.com&pos=1&utm_campaign=NDTV-Conv&pgtyp=listing-story">Grab
+                                    them now</a></button>
+
+
+
+                        </div>
+
+                        <div> <a
+                                href="https://pricee.com/api/redirect/n.php?itemid=deal-346057&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=7&property=www.ndtv.com&pos=1&utm_campaign=NDTV-Conv&pgtyp=listing-story">
+                                <img class="simg2"
+                                    src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png"
+                                    alt="">
+                            </a></div>
+
+
+                    </div>
+
+                    <p class="sp">+10% Instant Discount</p>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="sbox">
+                <div>
+                    <img class="imgstop"
+                        src="https://m.media-amazon.com/images/I/41KiRjICjBL._SL160_.jpg?downsize=100:*" alt="">
+                    <div style="font-weight: 900;font-size: 14px;">iQOO Z6 Pro 5G (Phantom Dusk, 8GB RAM,128GB...</div>
+
+                    <div class="lsdiv">
+
+                        <div style="font-weight: bold; margin-left: 10px;"> <a
+                                href="https://www.amazon.in/iQOO-Storage-Snapgradon-FlashCharge-Brightness/dp/B07WDK3ZS2/ref=sr_1_1?crid=2SNBG5GTQ060B&keywords=iQOO+Z6+Pro+%25G&qid=1652010429&sprefix=iqoo+z6+pro+%25g+%2Caps%2C195&sr=8-1">₹24,999</a>
+
+
+
+                        </div>
+
+                        <div> <a
+                                href="https://pricee.com/api/redirect/n.php?itemid=deal-346057&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=7&property=www.ndtv.com&pos=1&utm_campaign=NDTV-Conv&pgtyp=listing-story">
+                                <img class="simg2"
+                                    src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png"
+                                    alt="">
+                            </a></div>
+
+
+                    </div>
+
+                    <p class="sp" style="color: green; text-align: left;">(16%off)</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="sbox">
+                <div>
+                    <img class="imgstop"
+                        src="https://m.media-amazon.com/images/I/413u56t%20CiL._SL160_.jpg?downsize=100:*" alt="">
+                    <div style="font-weight: 900; font-size: 13.5px;">OnePlus Nord CE 2 Lite 5G(Blue Tide,6GB
+                        RAM,128GB..).</div>
+
+                    <div class="lsdiv">
+
+                        <div style="font-weight: bold; margin-left: 10px;"> <a
+                                href="https://www.amazon.in/OnePlus-Nord-Lite-128GB-Storage/dp/B09WQYFLRX/ref=sr_1_3?crid=3FCAYO2HP3PS0&keywords=OnePlus%2BNord%2BCE%2B2%2BLite%2B5G&qid=1652010220&sprefix=oneplus%2Bnord%2Bce%2B2%2Blite%2B5g%2Caps%2C206&sr=8-3&th=1">₹19,999</a>
+
+
+
+                        </div>
+
+                        <div> <a
+                                href="https://pricee.com/api/redirect/n.php?itemid=deal-346057&feed_type=ndtv&utm_source=SHOPPING-LHS&utm_medium=www.ndtv.com&platform=1&clicked_on=7&property=www.ndtv.com&pos=1&utm_campaign=NDTV-Conv&pgtyp=listing-story">
+                                <img class="simg2"
+                                    src="https://assets.gadgets360cdn.com/pricee/assets/store/1535984074_amazon-in.png"
+                                    alt="">
+                            </a></div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- Koo Page------------------------------------------- -->
+
+            <div class="koodiv">
+
+                <div class="koohead" style="display: flex;">
+                    <h4 class="trend">TRENDING ON KOO</h4>
+                    <img class="kooimg" src="https://www.kooapp.com/img/logoSolidOutline.png" alt="">
+                </div>
+
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/9140193/profile1633069026694spc2vl.png?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a
+                                href="https://www.kooapp.com/koo/AmritMahotsav/97662de2-22be-4842-9d35-816495f083cf">@AmritMahotsav</a>
+                        </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs">2h</p>
+                    </div>
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/9140193/profile1633069026694spc2vl.png?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color: black ;"
+                                href="https://www.kooapp.com/koo/AmritMahotsav/97662de2-22be-4842-9d35-816495f083cf">@AmritMahotsav</a>
+                        </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs">2h</p>
+                    </div>
+                    <div>
+                        #DidYouKnow? #Netaji made a request to #Rabindranath Tagore to create an auditorium & in
+                        response, he
+                        agreed
+                        to lay the f...
+
+                    </div>
+
+                </div>
+
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/8469828/274523a8-75c8-4146-8318-02afb9fee72dvoke.jpg?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color: black;"
+                                href="https://www.kooapp.com/koo/CMOPb/522468be-f988-4dbf-8a0b-c4b159cadd96">@CMOPb</a>
+                        </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs1">18min</p>
+                    </div>
+                    <div>
+                        Thalassaemia is a blood disorder in which the body fails to create enough hemoglobin, resulting
+                        in the weakening & destr...
+
+                    </div>
+
+                </div>
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/a4b0efa5-e90d-45a2-bcf4-baae08d41a58voke.jpg?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color: black;"
+                                href="https://www.kooapp.com/profile/kiren.rijiju">@kiren.rijiju</a>
+                        </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs1">19m</p>
+                    </div>
+                    <div>
+                        PM Sh Narendra Modi Ji Asks Youth to Take Part in Logo Design Contest for Upcoming G20
+                        Presidency Via NaMo App
+
+                    </div>
+
+                </div>
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/5517220/f887fc85-4e3d-43ef-8347-4e15eac23faavoke.jpg?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color: black;"
+                                href="https://www.kooapp.com/koo/mohfw_india/ad422ac2-7419-483f-8734-991fafcf26bc">@mohfw_india</a>
+                        </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs1">30m</p>
+                    </div>
+                    <div>
+                        Community education and awareness programmes are being held to remove any myths about
+                        Thalassemia. #InternationalThalass...
+
+                    </div>
+
+                </div>
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/img62.2021/2/10/img62_1612926431?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color: black;"
+                                href="https://www.kooapp.com/koo/RailMinIndia/31f93212-58e4-43b0-be13-58f028c283c6">@RailMinIndia
+                            </a> </h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs1">42min</p>
+                    </div>
+                    <div>
+                        On #WorldRedCrossDay, let's pay tribute to the volunteers & staff of the medical community who
+                        work on the frontline by ...
+                    </div>
+
+                </div>
+
+                <div class="koobox">
+                    <div class="koocontent" style="display: flex ;">
+                        <img class="kooleftimg"
+                            src="https://images.kooapp.com/transcode_input/d470ee16-68b9-4578-9ee8-dab96f1ef646voke.jpg?tr=n-dp_small"
+                            alt="">
+                        <h5 class="kootopic"><a style="color:black; "
+                                href="https://www.kooapp.com/koo/PIB_India/b7df7919-fe61-4d2d-a3a1-9634b9a10fb3"></a>
+                            @PIB_India</h5>
+                        <img class="koorightimg"
+                            src="https://kooapp-media-input.s3.ap-south-1.amazonaws.com/koo_verfication.png" alt="">
+                        <p class="khrs1">5min</p>
+                    </div>
+                    <div>
+                        #PresidentKovind is pleased to appoint ▶️Sudhanshu Dhulia, Chief Justice, Gauhati High Court
+                        ▶️Jamshed Burjor Pardiwa...
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <!-- midPart--------------------------------------------------------------------- -->
+
+
+
+        <div class="mnews">
+
+            <div class="mbox">
+                <div>
+                    <img class="mimg"
+                        src="https://i.gadgets360cdn.com/large/doctor-strange-in-the-multiverse-of-madness_review_small_1651756981398.jpeg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Doctor Strange in the Multiverse of Madness Review: Turbocharged and Underwhelming
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"> <a href="https://www.ndtv.com/topic/akhil-arora">Akhil Arora</a> |</p>
+                        <p class="grey">| Thursday May 05, 2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Doctor Strange in the Multiverse of Madness review: Benedict Cumberbatch and Elizabeth Olsen’s
+                        interdimensional trip is heavy on CGI and cameos, and light on character development. Doctor
+                        Strange in the Multiverse of Madness release date in India is May 6.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="mbox">
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2022-05/jao9bjb4_shaheen-afridi_120x90_05_May_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Watch: Middlesex Pacer Shaheen Afridi Castles Sussex Opener With An "Absolute Beauty" In County
+                        Championship
+
+
+
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/aakash-arya">Aakash Arya</a> |</p>
+                        <p class="grey">| Thursday May 05, 2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        County Championship, Sussex vs Middlesex: Shaheen Afridi continued his good run in County
+                        Championship as he disturbed the woodwork of Sussex opener Tom Haines with a beautiful
+                        out-swinger.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://i.gadgets360cdn.com/large/spyware_image_pexels_small_1626774192136.jpg" alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Spanish Intelligence Agency Accused of Gross Negligence After Spyware Hacked Phones of Top
+                        Officials
+
+
+
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/associated-press"> Associated Press</a> |
+                        </p>
+                        <p class="grey">| Thursday May 05, 2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Spanish intelligence agency comes under spotlight amid hacking revelations involving the cell
+                        phones of top politicians. CNI has been accused of negligence that allowed unknown sources to
+                        hack Prime Minister Sánchez's phone with the Pegasus spyware. To clarify the working of the
+                        department, agency director Paz Esteban López is appearing before a select parliamentary
+                        committee behind closed doors today.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2022-05/p6l41ao_jet-airways-240_120x90_05_May_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Jet Airways Takes To Skies Again After 3-Year Gap On 29th Birthday
+
+
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"> <a href="https://www.ndtv.com/topic/diksha-rani">Diksha Rani</a> |</p>
+                        <p class="grey">| Thursday May 05, 2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Jet Airways took to the skies again on Thursday after a gap of three years. It had ceased
+                        operations in April 2019 after experiencing financial difficulties.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://edata.ndtv.com/twittergft/sport_automated_story/240.full_637873743433739424.png"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Delhi Capitals vs Sunrisers Hyderabad: IPL 2022 Live Cricket Score, Live Score Of Today's Match
+                        on NDTV Sports
+
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/ndtvsports">NDTVSports</a> </p>
+                        <p class="grey">| Thursday May 05, 2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Live Updates of Today Match between Delhi Capitals vs Sunrisers Hyderabad from Brabourne
+                        Stadium, Mumbai. Check commentary and full scoreboard of the match.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://www.examedge.com/blogs/blogimages/why-becoming-a-nutritionist-is-the-career-for-you.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>Nutritionist Rujuta Diwekar Shares Food Tips To
+                        Beat The Heat This Summer
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/ndtv-food-desk">NDTV Food</a> </p>
+                        <p class="grey">| Wednesday May 04,2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Nutritionist Rujuta Diwekar also outlined the health problems one may
+                        experience as the temperature rises
+                    </h4>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://c.ndtvimg.com/2022-03/9lf05l2s_india-electricity-shortage-reuters_120x90_31_March_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>Why There Is Power Crisis In These States Due To Lack Of Coal Stocks
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of
+                                India</a> </p>
+                        <p class="grey">| Wednesday May 04,2022, New Delhi.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Huge outstanding dues worth about ₹ 7,918 crore of state-run power generating companies have
+                        resulted in less dispatch of coal especially to the states with high dues like Maharashtra,
+                        Rajasthan and West Bengal, according to an official note.
+                    </h4>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://c.ndtvimg.com/2022-04/rhpm23ho_samosa-650_625x300_26_April_22.jpg?im=FaceCrop,algorithm=dnn,width=345,height=250"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>These & Street-Style Snaks Will Elevate Your Tea Time experience
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"> <a href="https://www.ndtv.com/topic/vrinda-jain"> Vrinda Jain</a></p>
+                        <p class="grey">| Wednesday May 04,2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Amp up your tea time experience with these delicious and easy to make street style recipes.
+                    </h4>
+
+
+
+                </div>
+
+
+            </div>
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://c.ndtvimg.com/2021-04/vd6r4d3g_dust-storm-delhi-light-rain-delhi-pti-photo_120x90_17_April_21.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>Hailstorm,Rain In Parts Of Delhi Amid Severe Heat Wave
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of
+                                India</a> </p>
+                        <p class="grey">| Wednesday May 04,2022, New Delhi.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        A hailstorm hit parts of Delhi on Wednesday afternoon, while rainfall in isolated areas provided
+                        some respite from the heat.
+                    </h4>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2021-06/5bkpbh7_pomegranate_240x180_29_June_21.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>Wonder How Pomegranate Helps Your Body? Here Are A Few Health Benefits Of The Fruit
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/ndtv-health-desk"> NDTV Health Desk </a>
+                        </p>
+                        <p class="grey">| Wednesday May 04,2022, New Delhi.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Life coach Luke Coutinho shares a few health benefits of pomegranate and explains how it is
+                        great for our body.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2022-03/ao9bk53_sanjay-raut-240_120x90_08_March_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        "Don't Teach Us...": Sena's Response To Raj Thackeray's Balasaheb Video
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/press-trust-of-india">Press Trust of
+                                India</a> </p>
+                        <p class="grey">| Wednesday May 04,2022, Mumbai.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Shiv Sena MP on Wednesday asserted that there was no violation of loudspeaker guidelines in
+                        Maharashtra and said no one should teach Hindutva to his party.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://i.gadgets360cdn.com/large/Warcraft_Arclight_Rumble_game_launch_blizzard_small_1651655085453.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Warcraft Arclight Rumble Mobile Game Announced, Cinematic Trailer Out
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/sourabh-kulesh">Sourabh Kulesh</a></p>
+                        <p class="grey">| Wednesday May 04,2022, Mumbai.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Warcraft Arclight Rumble mobile game has been announced. It is a fast-paced mobile action
+                        strategy game that is set within the Warcraft universe. It has six game modes, over 70 maps, and
+                        over 60 collectible characters.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg"
+                        src="https://c.ndtvimg.com/2022-05/1p3vuj14_dc-srh_625x300_04_May_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+                        Delhi Capitals vs Sunrisers Hyderabad, IPL 2022: When And Where To Watch Live Telecast, Live
+                        Streaming
+
+
+
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/ndtvsports"> NDTV Sports Desk</a></p>
+                        <p class="grey">| Wednesday May 04,2022</p>
+                    </div>
+
+                    <h4 class="grey">
+                        IPL 2022: Delhi Capitals (DC) will take on SunRisers Hyderabad (SRH) at the Brabourne Stadium in
+                        Mumbai on May 5.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2022-05/3p7nuvf8_arslan-goni-_120x90_04_May_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+
+                        Sussanne Khan Is All Hearts For Boyfriend Arslan Goni's Eid Pic With Brother Aly And Jasmin
+                        Bhasin
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/karuna-tyagi">Karuna Tyagi</a></p>
+                        <p class="grey">| Wednesday May 04,2022, New Delhi.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Arslan Goni celebrated Eid with his family on May 3
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+            <div class="mbox">
+
+                <div>
+                    <img class="mimg" src="https://c.ndtvimg.com/2022-05/l5j7fnn8_shaktikanta-das_120x90_04_May_22.jpg"
+                        alt="">
+                </div>
+
+                <div class="mcontent">
+
+                    <h3>
+
+                        RBI Hikes Repo Rate. Here Are Top 5 Quotes From Governor's Speech
+                    </h3>
+
+                    <div class="mc">
+                        <p class="mndtv"><a href="https://www.ndtv.com/topic/animesh-singh">Animesh Singh</a></p>
+                        <p class="grey">| Wednesday May 04,2022, New Delhi.</p>
+                    </div>
+
+                    <h4 class="grey">
+                        Reserve Bank of India (RBI) Governor Shaktikanta Das on Wednesday made a surprise announcement
+                        of hiking repo rates by 40 basis points to 4.40 per cent.He cited rising inflation,
+                        geo-political tensions and spiralling commodity prices as the main reason behind the move, which
+                        was decided in an off-cycle meeting of the monetary policy committee held between May 2-4.
+                    </h4>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- 
+            <div class="mbtn">
+
+                <div><a class="" href=""></a> </div>
+
+
+            </div> -->
+
+
+            <div class="mbtnnav">
+
+
+                <button class="mnbtnone" style="color"> <a class="mnbtnone" style="color: white;" href="/latest.html">
+                        1</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-2">
+                        2</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-3">
+                        3</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-4">
+                        4</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-5">
+                        5</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-6">
+                        6</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href="https://www.ndtv.com/latest/page-7">
+                        7</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black;" href=""> ...</a></button>
+                <button class="mnbt"> <a class="nbtn" style="color: black " href="https://www.ndtv.com/latest/page-8">
+                        8</a></button>
+                <button class="mnbtnine"> <a class="ninec" style="color: grey;"
+                        href="https://www.ndtv.com/latest/page-2"> ></a></button>
+
+
+
+
+            </div>
+
+            <!-- sndmain.......................................................................... -->
+
+            <div class="sndmain">
+
+                <div class="longdivL">
+
+                    <div class="lbox">
+                        <div><img class="limg"
+                                src="https://www.maxlifeinsurance.com/content/dam/corporate/images/New_Term_Creative_5.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="ltextad">This term plan gives ₹2,79lac premium back at no extra cost*^</h3>
+                        </div>
+                    </div>
+                    <div class="lnads">Max Life Insurance Calculater | Sponsored</div>
+
+
+                </div>
+
+
+                <div class="side2div">
+                    <div class="xtraMainBox">
+                        <div class="xbox">
+                            <div><img class="ximg"
+                                    src="https://analyticsindiamag.com/wp-content/uploads/2019/01/Creative2-with-box.jpg"
+                                    alt=""></div>
+                            <div>
+                                <h3 class="xtextad">AI Program with 800+ Career Transition,Upskil...</h3>
+                            </div>
+                        </div>
+
+                        <div class="xnads">Great Learning | Sponsored</div>
+                        <div class="xtraMainBox">
+                            <div class="xbox">
+                                <div><img class="ximg"
+                                        src="https://i0.wp.com/stockquantum.com/wp-content/uploads/2020/03/Zerodha-Golden-Pi.png"
+                                        alt=""></div>
+                                <div>
+                                    <h3 class="xtextad">Protect Your Money By Investing In Corporote...</h3>
+                                </div>
+                            </div>
+                            <div class="xnads">GoldenPi | Sponsored</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- sssssssssssssssssssssssssssssssssssssss -->
+
+
+
+
+
+
+
+
+
+
+            <div class="xtrnewsDiv">
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://www.maxlifeinsurance.com/content/dam/corporate/images/Diversity-and-inclusion/IMG-20210107-WA0013.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Born Between 1970-1990? Check eligibility for ₹1Cr term plan**</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Max Life Insurance Calculater</div>
+
+                </div>
+
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://qph.cf2.quoracdn.net/main-qimg-5c157efd73277a0db59eaf12e7e0fee1-pjlq"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Born Between 1965-1990? Get ₹1Cr Term Plan start at ₹490/month*</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Term Life Insurance Plan-Get Free Quote!</div>
+
+                </div>
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://static.pbcdn.in/cdn/images/life/why-buy-term-insurance_mobile.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="xtextad">Born Between 1965-1990? Get ₹1Cr Term Plan start at ₹503/month*</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Term Life Insurance Plan</div>
+
+                </div>
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmfIb1dpoQ_jOkH-DJujddDLPOCVccEkxI0BTHOOuHtgrEWCUxVKyGnWMrdSiRc2UUTA&usqp=CAU"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Born Invest in Corporate Bonds with GoldenPi</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">GoldenPi</div>
+
+                </div>
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://s3.ap-south-1.amazonaws.com/healthinsurances3.com/prod/imagegallery/Best-Health-Insurance-Plans-for-Family.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">No Upper Age Limit For Health Insurance. Get ₹5 Lac Health Plan... </h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Best Health Policy</div>
+
+                </div>
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://neilpatel.com/wp-content/uploads/2021/07/digital-marketing_featured-image.png"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Become a Digital Marketing Expert</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Intellipaat</div>
+
+                </div>
+
+                <div class="thirddiv">
+
+
+                    <div class="tbox">
+                        <div><img class="timg"
+                                src="https://www.canarahsbclife.com/content/dam/choice/inner-banner/images/what-is-1-crore-term-insurance.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="ttextad">Born Between 1965-1990?Get ₹1Cr Term Life Insurance Plan @503/month*.
+                            </h3>
+                        </div>
+
+                        <div class="tnads">Term Life Insurance </div>
+                    </div>
+
+
+                    <div class="tbox">
+                        <div><img class="timg" src="https://i.ytimg.com/vi/Wmy4eiPaysA/maxresdefault.jpg" alt=""></div>
+                        <div>
+                            <h3 class="ttextad">Lear From IIT Madras Faculty & Industry Experts</h3>
+                        </div>
+
+                        <div class="tnads">Intellipaat</div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="xtrnewsDiv">
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg" src="https://static.pbcdn.in/cdn/images/health/family_health_mobile.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">माता पिता के लिए स्वस्थ्य बिमा | शुरुआत @₹673/प्रतिमा</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">स्वास्थ्य बीमा परिवार/माता-पिता</div>
+
+                </div>
+
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://img.etimg.com/thumb/msid-88973317,width-1200,height-900/industry/services/education/applications-invited-for-nptel-courses-iit-madras.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Lear From IIT Madras Faculty & Industry Experts</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Intellipaat</div>
+
+                </div>
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://aniportalimages.s3.amazonaws.com/media/details/Deepak_Sahni_july3_xQpv6uR_AF4uNCg.jpg"
+                                alt="">
+                        </div>
+                        <div>
+                            <h3 class="xtextad">Get hundred percent cashback offer valid till midnight</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Healthians</div>
+
+                </div>
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://c.ndtvimg.com/2019-11/gddfn7u_dead-body-generic-istock_625x300_05_November_19.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Indian nurse died in road accident during Eid Holiday Trip In UAE</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">A 36-year-old Indian nurse died in a horrific</div>
+
+                </div>
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://c.ndtvimg.com/2022-05/dnduukeo_neighbour-650_625x300_08_May_22.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="xtextad">Neighbour's Complaint About Loud Music Goes Viral,Rings Doorbell To Say
+                                "I want To Part...</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">A man rang his neighbour doorbell in order to</div>
+
+                </div>
+
+
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg" src="https://c.ndtvimg.com/e98ldln8_mt-everest_625x300_08_August_18.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Indian Women Suffers Cardiac Arrest On Way To Everest Base Camp,Dies
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="xnads">A 52 year old woman doctor from Mumbai</div>
+
+                </div>
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg" src="https://cdn.trendhunterstatic.com/thumbs/cholesterol-app.jpeg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Reduce Cholesterol levels with a Coach</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">HealthyfiMe Premium</div>
+
+                </div>
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg" src="https://www.nalli.com/media/wysiwyg/Mothers-Day_Mobile_Banner.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Gift Her The Best Of All Silks</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Nalli Silk Ssarees</div>
+
+                </div>
+                <div class="xtraMainBox">
+                    <div class="xbox">
+                        <div><img class="ximg"
+                                src="https://is1-2.housingcdn.com/012c1500/31b3e94fe29fa5ad8489bd77799eee63/v0/medium/g_b_ankur_apartment-paldi-ahmedabad-g_b_builders.jpeg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="xtextad">Luxury Apartment Prices In Nagpur City Might Actually Surprise You</h3>
+                        </div>
+                    </div>
+                    <div class="xnads">Flat for Sale | Search Ads</div>
+
+                </div>
+
+                <div class="thirddiv" style="margin-left:50px ;">
+
+
+                    <div class="tbox">
+                        <div><img style="width:420px ;" class="timg"
+                                src="https://c.ndtvimg.com/2021-08/abnub9co_virender-sehwag_625x300_13_August_21.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605"
+                                alt=""></div>
+                        <div>
+                            <h3 class="ttextad" style="width: 400px; text-align: center;">IPL 2022 :Not Rishab Pant or
+                                Kishan, This Wicketkeeper-Better Has Impressed Virender Sehwag.</h3>
+                        </div>
+
+                        <div class="tnads" style="width: 400px;text-align: center;">IPL 2022: Former Indian Batter
+                            Virendra Sehwag reserver some High praise for the young wicketkeeper-batter </div>
+                    </div>
+
+
+                    <div class="tbox" style=" margin-left: 40px;">
+                        <div><img style="width:420px;" class="timg"
+                                src="https://upload.wikimedia.org/wikipedia/en/5/54/The_Worst_Person_in_the_World_%28film%29.jpg"
+                                alt=""></div>
+                        <div>
+                            <h3 class="ttextad" style="text-align:center; ">The Wrost Person in the World</h3>
+                        </div>
+
+                        <div class="tnads" style="width: 400px; text-align: center; margin-top: 37.5px;">The Wrost
+                            Person In The World Movie : Find The Wrost Person In The World Movie review,release
+                            date,critic rating,trialer,duration,cast on NDTV Gadget 360 </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+            <!-- Footerrrr -->
+
+            <div class="footer">
+                <div style="text-align: center;">
+                    ............................Advertisement............................
+                </div>
+
+                <div class="footmid">
+                    <div class="footbox"><a href="">About Us | </a></div>
+                    <div class="footbox"><a href="">Advetise | </a></div>
+                    <div class="footbox"><a href="">Archieves |</a></div>
+                    <div class="footbox"><a href="">Apps |</a></div>
+                    <div class="footbox"><a href="">Careers |</a></div>
+                    <div class="footbox"><a href="">Channels |</a></div>
+                    <div class="footbox"><a href="">Disclaimer |</a></div>
+                    <div class="footbox"><a href="">Feedback |</a></div>
+                    <div class="footbox"><a href="">Investors |</a></div>
+                    <div class="footbox"><a href="">Redressals |</a></div>
+                    <div class="footbox"><a href="">Service Terms</a></div>
+
+                </div>
+
+
+                <div class="cright">
+                    This website follow the dnpa code of ethics | @ copyright ndtv convergence limited 2022. all rights
+                    reserved.
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- RightNEws--------------------------------------------------------------------- -->
+
+        <div class="rightNews">
+
+
+            <div class="ad1">
+                <p class="adtext">Advertisement</p>
+                <img class="ad1" src="
+                
+                https://tpc.googlesyndication.com/daca_images/simgad/15542777513142813944" alt="">
+
+
+
+            </div>
+
+            <div class="ad2">
+                <p class="adtext">Advertisement</p>
+                <img class="ad2i"
+                    src="https://tpc.googlesyndication.com/simgad/6707188191464400939?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmG0pLgywjWoLkQybe9Tw7XGZMpIw"
+                    alt="">
+
+            </div>
+
+
+
+            <div class="adother">
+
+                <img class="adotheri"
+                    src="https://media.npr.org/assets/img/2022/05/02/gettyimages-1395053372_custom-84a144821489c3ff09c8f141b8d3edcb2f7c99d5-s1000-c85.webp"
+                    alt="">
+
+
+                <h5 class="adothert">Met Gala 2022: Natasha Poonamwalla's Red Carpet Glory</h5>
+
+
+            </div>
+
+
+            <div class="adother">
+
+                <img class="adotheri" src="https://pbs.twimg.com/media/EyHwV8yVcAADEyf.jpg" alt="">
+
+
+                <h5 class="adothert">Born Between 1965-1990? Get ₹1 Cr Team Life Plan @₹503/month </h5>
+
+                <p class="grey gs ">
+                    Team Life Insurance Plan
+                </p>
+            </div>
+
+            <div class="adother">
+
+                <img class="adotheri" src="https://c.ndtvimg.com/2022-05/rstdv7io_dharmendra_625x300_02_May_22.jpg"
+                    alt="">
+
+
+                <h5 class="adothert">Hema Malini Shares An Adorable Picture With Dharmendra On Thier Wedding
+                    Anniversary, Says "I Thank God" </h5>
+
+
+            </div>
+
+
+            <div class="adother">
+
+                <img class="adotheri"
+                    src="https://static.javatpoint.com/tutorial/machine-learning/images/ai-vs-machine-learning.png"
+                    alt="">
+
+
+                <h5 class="adothert">AI & ML Course with UT Austin Certificate & Caree Support</h5>
+
+                <p class="grey gs ">
+                    Great Learning
+                </p>
+            </div>
+
+
+
+
+            <div class="adother">
+
+                <img class="adotheri"
+                    src="https://c.ndtvimg.com/2022-05/2lhhvvpg_kylie-jenner_625x300_04_May_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350"
+                    alt="">
+
+
+                <h5 class="adothert">Zomato Share Meme On Kylie Jenner's Met Gala 2022 Dress; Intenet In Splits</h5>
+
+                <p class="grey gs ">
+                    NDTV Food
+                </p>
+            </div>
+
+
+            <div class="adother">
+
+                <img class="adotheri"
+                    src="https://www.bajajfinservmarkets.in/content/dam/emistoremarketplace/index/26-07-21/indus-health/slider/IndusHelth_BP_Slider_1st_Mob_indushealth_SF.jpg"
+                    alt="">
+
+
+                <h5 class="adothert">Get 100% Cashback offer valid till midnight.</h5>
+
+                <p class="grey gs ">
+                    Helthians
+                </p>
+            </div>
+
+
+            <div class="adother">
+
+                <img class="adotheri"
+                    src="https://c.ndtvimg.com/2021-03/tim3t2ek_navneet-rana-arvind-sawant-shiv-sena-acid-attack_625x300_23_March_21.jpg"
+                    alt="">
+
+
+                <h5 class="adothert">Supreme Court To Hear MP Navneet Rana's Caste Certificate Case In July.</h5>
+
+
+            </div>
+
+            <div class="adother">
+
+                <img class="adotheri" src="https://c.ndtvimg.com/2022-05/jvev3nr_mumtaz_625x300_06_May_22.jpg" alt="">
+
+
+                <h5 class="adothert">Veteran Actress Mumtaz On Her Recent Health Crisis :"My Iranian Skin Was Giving Me
+                    Trouble".</h5>
+
+
+            </div>
+
+            <div class="adother">
+
+                <img class="adotheri" src="https://i.ytimg.com/vi/CaTtB5l4ats/maxresdefault.jpg" alt="">
+
+
+                <h5 class="adothert">Free Masterclass - Become a Maang Engineer</h5>
+
+                <p class="grey gs ">
+                    Scaler Academmy
+                </p>
+            </div>
+            <div class="adother">
+
+                <img class="adotheri" src="https://garvthakur.org/subbrokercategory/1791.webp" alt="">
+
+
+                <h5 class="adothert">Invest In Corporate Bonds with GoldenPi</h5>
+
+                <p class="grey gs ">
+                    GoldenPi
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>

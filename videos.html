@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5b0f9a8720.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar{
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            position:fixed;
+            justify-content: space-evenly;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding-top: 25px;
+            top:0;
+            
+           
+        }
+        
+        #home{
+            display: flex;
+            margin-top: -15px;
+            margin-left: -20%;
+        }
+        #select{
+            padding:  10px 20px 10px 20px;
+            margin-left: -50%;
+            margin-top: -10px;
+        }
+        a,p,#select>option{
+            text-decoration: none;
+            color: rgb(65, 63, 63);
+            font-family: roboto,sans-serif;
+        }
+        #cata1{
+            width: 90%;
+            margin-left: 5%;
+            border: 0px solid rebeccapurple;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap: 10px;
+            margin-top: 10px;
+            padding-top: 10px;
+           
+        }
+       .card1{
+           border: 0px solid black;
+           
+       }
+       img{
+           width: 100%;
+           /* position: relative; */
+       }
+       p{
+           width: 80%;
+           text-align: left;
+           /* margin-left: 20px; */
+       }
+       p+p{
+           margin-top: 15px;
+       }
+       #featured>div>h2{
+           padding-top:60px;
+           margin-left: 5%;
+           color: #666666;
+           font-family: montserat,sans-serif;
+
+       }
+       .fa-brands{
+           height: 50px;
+           color: red;
+           position: absolute;
+           margin-top: -20px;
+           border-radius: 5px;
+           
+       }
+       #time{
+           color: red;
+       }
+       img+div+div>a>p{
+           color: rgb(18, 18, 237);
+       }
+       #main{
+           border: 0px solid purple;
+           width: 70%;
+           /* display: flex; */
+       }
+       #right{
+           border: 0px solid red;
+           display: grid;
+           grid-template-rows: repeat(4,500px);
+           gap: 10px;
+           width: 25%;
+           margin-left: 73%;
+           margin-top: -2600px;
+       }
+       #right>img{
+           width: 100%;
+       }
+       #card2{
+           width: 95%;
+
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div><select name="select" id="select">
+           <option<i class="fa fa-bell"></i> value="">SELECTIONS</option>
+           <option value="">CORONAVIRUS</option>
+           <option value="">LIVE TV</option>
+           <option value="">LATEST</option>
+           <option value="">INDIA</option>
+           <option value="">OPINION</option>
+           <option value="">CITIES</option>
+           <option value="">WORLD</option>
+           <option value="">OFFBEAT</option>
+           <option value="">VIDEOS</option>
+           <option value="">TRENDS</option>
+           <option value="">SCHEDULE</option>
+           <option value="">EDUCATION</option>
+           <option value="">SCIENCE</option>
+           <option value="">PEOPLE</option>
+           <option value="">INDIANS ABROAD</option>
+           <option value="">SOUTH</option>
+           <option value="">CHEAT SHEET</option>
+           <option value="">PHOTOS</option>
+           <option value="">WEATHER</option>
+           <option value="">NEWS ALERTS</option>
+        </select></div>
+        <div id="home">
+            <p><a href="videos.html">HOME</a></p>
+            <p>>VIDEO</p> 
+        </div>
+        <div id="logo">
+          <a href="https://www.ndtv.com/"><img src="https://cdn.ndtv.com/static/ndtv_2014/images/sticky_nav_ndtvlogo.png" alt="ndtv logo"></a>  
+        </div>
+        <div id="navend">
+            <i class="fa fa-bell"></i>
+            | <input type="text" placeholder="search here">
+            <i class="fa fa-magnifying-glass"></i>
+        </div>
+        
+    </div>
+    <div id="main">
+        <div id="featured">
+            <div>
+               <h2>FEATURED VIDEOS</h2>
+            </div>
+            <div id="cata1">
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72689SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/nitish-kumar-s-response-to-prashant-kishor-s-charge-631657#video-featured"><p>Nitish Kumar's Response To Prashant Kishor's Charge <span id="time">0:37</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/tamilnaducm_ani_92769.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/watch-mk-stalin-boards-bus-speaks-to-people-about-1-year-of-governance-631800#video-featured"><p>Watch: MK Stalin Boards Bus, Speaks To People About 1 Year Of Governance <span id="time">1:01</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72835SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/cooking-gas-cylinders-price-raised-by-rs-50-for-homes-631792#video-featured"><p>Cooking Gas Cylinders' Price Raised By Rs. 50 For Homes <span id="time">1:58</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142248ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/entertainment/news/fauda-actor-tsahi-halevi-performs-for-ndtv-631825#video-featured"><p>'Fauda' Actor Tsahi Halevi Sings For NDTV <span id="time">3:40</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142281ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/bjp-s-tajinder-bagga-faces-arrest-warrant-issued-by-punjab-court-631843#video-featured"><p>BJP's Tajinder Bagga Faces Arrest Warrant Issued By Punjab Court <span id="time">1:58</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/khadijareception_92749.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/entertainment/news/ar-rahman-shares-a-video-from-daughter-khatija-and-riyasdeen-s-reception-631761#video-featured"><p>AR Rahman Shares A Video From Daughter Khatija and Riyasdeen's Reception  <span id="time">12:19</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/oneplusvt_92765.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://gadgets360.com/videos/oneplus-10r-all-the-speed-you-need-631794#video-featured"><p>OnePlus 10R: All The Speed You Need? <span id="time">5:08</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142149ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/the-big-fight/india-s-covid-death-count-vs-who-s-methodology-what-s-not-right-631736#video-top-shows"><p>India's Covid Death Count vs WHO's Methodology: What's Not Right?<span id="time"> 45:39</span> </p></a>
+                   </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div id="featured">
+            <div>
+               <h2>TOP SHOWS</h2>
+            </div>
+            <div id="cata1">
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72689SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://gadgets360.com/videos/review-of-the-realme-gt-neo-3-oneplus-10r-631788#video-top-shows"><p>Review Of The Realme GT Neo 3 & OnePlus 10R <span id="time">23:04</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/141944ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/centre-vs-who-on-covid-death-numbers-will-we-ever-know-the-real-covid-death-toll-631574#video-top-shows"><p>Centre vs WHO On Covid Death Numbers: Will We Ever Know The Real Covid Death Toll? <span id="time">25:16</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72396SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/shows/no-spin/suppressed-freedom-is-india-a-dangerous-country-for-journalists-631410#video-top-shows"><p>Suppressed Freedom: Is India A Dangerous Country For Journalists? <span id="time">26:41</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142140ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/breaking-views/from-gujarat-mla-jignesh-mevani-to-bjp-s-tajinder-bagga-politics-vs-rule-of-law-631733#video-top-shows"><p>From Gujarat MLA Jignesh Mevani To BJP's Tajinder Bagga: Politics vs Rule Of Law? <span id="time">19:43</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72712SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/my-husband-didn-t-even-realise-my-brother-killed-him-hyderabad-woman-631675#video-mostpopular"><p>"My Husband Didn't Even Realise My Brother Killed Him": Hyderabad Woman <span id="time">9:00</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72757SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/sourav-ganguly-hosts-amit-shah-for-dinner-631737#video-mostpopular"><p>Sourav Ganguly Hosts Amit Shah For Dinner<span id="time"> 1:32</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142137ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/bjp-leaders-body-found-hanging-outside-his-house-in-kolkata-631732#video-mostpopular"><p>कोलकाता में घर के बाहर लटका मिला बीजेपी नेता का शव <span id="time">2:57</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142238ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/color-blind-casting-done-in-web-series-hello-shabana-azmi-631815#video-mostpopular"><p>वेब सीरीज 'हैलो' में की गई कलर ब्लाइंड कास्टिंग : शबाना आजमी <span id="time">25:43</span> </p></a>
+                   </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div id="featured">
+            <div>
+               <h2>MOST WATCHED VIDEOS</h2>
+            </div>
+            <div id="cata1">
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142334ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/no-coercive-action-against-tajinder-bagga-till-next-hearing-says-court-631869#video-justadded"><p>No Coercive Action Against Tajinder Bagga Till Next Hearing, Says Court <span id="time">5:50</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142330ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/bjp-goes-out-of-its-way-to-protect-goondaism-aap-s-atishi-631868#video-justadded"><p>"BJP Goes Out Of Its Way To Protect Goondaism": AAP's Atishi <span id="time">3:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72689SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/nitish-kumar-s-response-to-prashant-kishor-s-charge-631657#video-featured"><p>Nitish Kumar's Response To Prashant Kishor's Charge<span id="time">0:37</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142329ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/punjab-police-act-concern-for-law-abiding-citizen-additional-solicitor-general-631867#video-justadded"><p>Punjab Police Act Concern For Law Abiding Citizen: Additional Solicitor General <span id="time">2:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142325ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/07052022-i-rahulgandhivt-631864#video-justadded"><p>राहुल गांधी ने तेलंगाना में मुख्यमंत्री केसीआर पर किए जमकर हमले <span id="time">2:31</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142317ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/the-biggest-stories-of-may-7-2022-631866#video-justadded"><p>The Biggest Stories Of May 7, 2022 <span id="time">17:13</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142335ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/punjab-haryana-high-court-stays-the-arrest-of-tajinder-pal-singh-bagga-till-the-next-hearing-631870#video-justadded"><p>पंजाब-हरियाणा हाईकोर्ट ने अगली सुनवाई तक तजिंदर पाल सिंह बग्गा की गिरफ्तारी पर रोक लगाई <span id="time">6:48</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142314ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/muqabla-is-there-an-attempt-to-pacify-the-issue-of-rising-inflation-behind-the-loudspeaker-noise-631862#video-justadded"><p>मुकाबला : क्या लाउडस्पीकर के शोर के पीछे बढ़ती महंगाई के मुद्दे को शांत करने की कोशिश की जा रही? <span id="time">27:34</span> </p></a>
+                   </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <div id="featured">
+            <div>
+               <h2>JUST ADDED VIDEOS</h2>
+            </div>
+            <div id="cata1">
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142317ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/the-biggest-stories-of-may-7-2022-631866#video-justadded"><p>The Biggest Stories Of May 7, 2022 <span id="time">17:13</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142335ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://ndtv.in/videos/punjab-haryana-high-court-stays-the-arrest-of-tajinder-pal-singh-bagga-till-the-next-hearing-631870#video-justadded"><p>पंजाब-हरियाणा हाईकोर्ट ने अगली सुनवाई तक तजिंदर पाल सिंह बग्गा की गिरफ्तारी पर रोक लगाई <span id="time">6:48</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142329ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/punjab-police-act-concern-for-law-abiding-citizen-additional-solicitor-general-631867#video-justadded"><p>Punjab Police Act Concern For Law Abiding Citizen: Additional Solicitor General <span id="time">2:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142329ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/punjab-police-act-concern-for-law-abiding-citizen-additional-solicitor-general-631867#video-justadded"><p>Punjab Police Act Concern For Law Abiding Citizen: Additional Solicitor General <span id="time">2:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/72689SXYZ.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/news/nitish-kumar-s-response-to-prashant-kishor-s-charge-631657#video-featured"><p>Nitish Kumar's Response To Prashant Kishor's Charge <span id="time">0:37</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142329ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/punjab-police-act-concern-for-law-abiding-citizen-additional-solicitor-general-631867#video-justadded"><p>Punjab Police Act Concern For Law Abiding Citizen: Additional Solicitor General <span id="time">2:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142329ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/punjab-police-act-concern-for-law-abiding-citizen-additional-solicitor-general-631867#video-justadded"><p>Punjab Police Act Concern For Law Abiding Citizen: Additional Solicitor General <span id="time">2:42</span> </p></a>
+                   </div>
+    
+                </div>
+                <div class="card1">
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-05/142330ZX.gif" alt="">
+                   <div> <i class="fa-brands fa-youtube"></i></div>
+                   <div>
+                       <a href="https://www.ndtv.com/video/news/left-right-centre/bjp-goes-out-of-its-way-to-protect-goondaism-aap-s-atishi-631868#video-justadded"><p>"BJP Goes Out Of Its Way To Protect Goondaism": AAP's Atishi <span id="time">3:42</span> </p></a>
+                   </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div id="right">
+        <div id="card2">
+            <img src="add1.JPG" alt="">
+        </div>
+        <div id="card2">
+            <img src="add2.JPG" alt="">
+        </div>
+        <div id="card2">
+            <img src="add3.JPG" alt="">
+        </div>
+        <div id="card2">
+            <img src="add4.JPG" alt="">
+        </div>
+        <div id="card2">
+            <img src="add5.JPG" alt="">
+        </div>
+
+    </div>
+
+    
+   
+     
+</body>
+</html>

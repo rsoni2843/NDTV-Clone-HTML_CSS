@@ -1,7 +1,0 @@
-NDTV PROJECT
-
-NAME_1 - Rohit Prajapat -> HOMEPAGE,LIVE TV
-NAME_2 - Ashvary Gidian -> LATEST PAGE
-NAME_3 - Sonu Prasad -> SHOPPING PAGE
-NAME_4 - Suranjan Achary -> PHOTOS & VIDEOS
-NAME_5 - Nipendra Soni -> CITIES,OPINION

@@ -219,6 +219,9 @@ body{
     /* border: 1px solid black; */
     width: 75%;
 }
+#articles>.artins:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 1px 4px;
+}
 .articlematter{
     line-height: 22px;
 }

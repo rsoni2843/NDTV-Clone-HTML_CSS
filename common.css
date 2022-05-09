@@ -3,7 +3,7 @@
     width: 20%;
     margin-left: 5%;
 }
-#left>img{
+#left>a>img{
     width:auto;
     height: 50px;
     padding-top:4px ;
